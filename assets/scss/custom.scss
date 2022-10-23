@@ -1,0 +1,70 @@
+.dark {
+	.btn.btn-primary {
+		background-color: $sta-night-primary;
+		border-color: $sta-night-primary;
+		color: rgb(248, 248, 242) !important; 
+	}
+	
+	.btn.btn-outline-primary {
+		border-color: $sta-night-primary;   
+	}
+	
+	.btn.btn-outline-primary:hover {
+		border-color: $sta-night-primary;
+		background-color: $sta-night-primary;
+	}
+	
+	.btn-toolbar .btn.btn-primary:hover,
+	.btn-toolbar .btn.btn-primary:focus {
+		background-color: $sta-night-primary-light !important;
+	}
+	
+	.btn-toolbar .btn.btn-primary:active,
+	.btn-toolbar .btn.btn-primary.active {
+		background-color: $sta-night-primary-dark !important;
+	}
+	
+	.btn-primary:not(:disabled):not(.disabled).active:focus,
+	.btn-primary:not(:disabled):not(.disabled):active:focus,
+	.show > .btn-primary.dropdown-toggle:focus {
+		box-shadow: 0 0 0 0.1rem $sta-night-primary-light;
+	}
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+	box-shadow: 0 0 0 0.1rem $sta-primary-light;
+}
+
+.navbar .navbar-nav .nav-link {
+	&.active,
+	&:hover,
+	&:focus {
+		color: $sta-link-hover;
+	}
+}
+
+#navbar-main .main-menu-item .nav-link {
+	&.active,
+	&:hover,
+	&:focus {
+		color: $sta-link-hover;
+	}
+}
+
+.article-title a:hover {
+  color: $sta-link-hover !important;
+  text-decoration: none !important;
+  transition: color 0.6s ease;
+}
+
+.dark .article-title a:hover {
+	color: $sta-dark-link-hover !important;
+	text-decoration: none !important;
+	transition: color 0.6s ease;
+  }
+
+.dark a.summary-link:hover {
+  color: unset;
+}
