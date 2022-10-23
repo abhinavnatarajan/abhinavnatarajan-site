@@ -6,8 +6,8 @@
 # Appearance
 
 appearance:
-  theme_day: Custom Theme
-  theme_night: Custom Theme
+  theme_day: custom_theme
+  theme_night: custom_theme
   font: Minimal
   font_size: L
   icon: false # icon for showing in browser title bar or tabs

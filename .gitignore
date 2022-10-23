@@ -10,4 +10,4 @@ go.sum
 .hugo_build.lock
 
 # Themes - pull as modules during build
-themes/
+/themes/
