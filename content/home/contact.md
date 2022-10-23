@@ -14,6 +14,7 @@ subtitle:
 content:
   # Automatically link email and phone or display as text?
   autolink: true
+  imagify: true # change email and phone numbers to images
 
   # Email form provider
   form:
@@ -27,21 +28,21 @@ content:
   # Contact details (edit or remove options as required)
   # email: abhinav.natarajan@merton.ox.ac.uk
   # phone: 888 888 88 88
-  address: 
-    street: Desk S3.28, Mathematical Institute, Radcliffe Observatory, Andrew Wiles Building, Woodstock Road 
-    city: Oxford 
-    region: 
-    postcode: OX2 6GG
-    country: United Kingdom
-    country_code: UK
+  # address: 
+    # street: Desk S3.28, Mathematical Institute, Radcliffe Observatory, Andrew Wiles Building, Woodstock Road 
+    # city: Oxford 
+    # region: 
+    # postcode: OX2 6GG
+    # country: United Kingdom
+    # country_code: UK
   # coordinates:
   #   latitude: '37.4275'
   #   longitude: '-122.1697'
-  directions: 
+  # directions: 
   # office_hours:
   #   - 'Monday 10:00 to 13:00'
   #   - 'Wednesday 09:00 to 10:00'
-  appointment_url: 'https://calendly.com'
+  # appointment_url: 'https://calendly.com'
   # contact_links:
   #   - icon: twitter
   #     icon_pack: fab
