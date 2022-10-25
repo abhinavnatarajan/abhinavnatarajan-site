@@ -14,8 +14,16 @@ main:
   #   url: '#talks'
   #   weight: 40
   - name: Publications
-    url: '#publications'
+    identifier: publication_top_level_menu_item
     weight: 20
+  - name: Recent
+    url: '#publications'
+    weight: 10
+    parent: publication_top_level_menu_item
+  - name: All
+    url: '/publication/'
+    weight: 20
+    parent: publication_top_level_menu_item
   - name: Projects
     url: '#projects'
     weight: 30

@@ -77,7 +77,7 @@
         {{ end }}
         {{ if .display.bio }}
         <li>
-          <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} aria-label="{{ .icon }}">
+          <a class = "js-scroll" href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} aria-label="{{ .icon }}">
             <i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }} big-icon"></i>
           </a>
         </li>
