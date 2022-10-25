@@ -31,3 +31,6 @@ name = "custom"
 
 	# Background
 	background = "hsla(231, 15%, 16%, 1)"
+
+	# Section Headings
+	section_headings_color = "rgb(152, 166, 173)"

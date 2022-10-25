@@ -34,6 +34,32 @@
 	.show > .btn-primary.dropdown-toggle:focus {
 		box-shadow: 0 0 0 0.1rem $sta-night-primary-light;
 	}
+
+	.navbar .navbar-nav .nav-link:hover {
+		color: $sta-dark-link-hover !important;
+		transition: color 0.3s ease;
+	}
+
+	// Change the color of article title links on hover
+	.article-title a:hover {
+		color: $sta-dark-link-hover !important;
+		text-decoration: none !important;
+		transition: color 0.3s ease;
+	}
+
+	// Do not change the color of article summary links on hover
+	a.summary-link:hover {
+		color: unset;
+	}
+
+	h1, #about .section-subheading,
+	.portrait-title h3,
+	.article-metadata,
+	ul.ul-edu li .description p.institution {
+		color: $sta-dark-section-headings;
+	}
+
+	
 }
 
 .btn-primary:not(:disabled):not(.disabled).active:focus,
@@ -48,27 +74,9 @@
 		transition: color 0.3s ease;
 }
 
-.dark {
-	.navbar .navbar-nav .nav-link:hover {
-		color: $sta-dark-link-hover !important;
-		transition: color 0.3s ease;
-	}
-}
-
 // Change the color of article title links on hover
 .article-title a:hover {
   color: $sta-link-hover !important;
   text-decoration: none !important;
   transition: color 0.3s ease;
-}
-
-.dark .article-title a:hover {
-	color: $sta-dark-link-hover !important;
-	text-decoration: none !important;
-	transition: color 0.3s ease;
-  }
-
-// Do not change the color of article summary links on hover
-.dark a.summary-link:hover {
-  color: unset;
 }
