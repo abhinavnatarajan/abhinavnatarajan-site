@@ -22,7 +22,7 @@ organizations:
     url: https://people.maths.ox.ac.uk/harrington/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include applied algebra, topology, geometry, and their applications to data science. 
+bio: My research interests include applied algebra, topology, geometry, and their applications. 
 
 # Interests to show in About widget
 interests:
@@ -89,4 +89,4 @@ email: ''
 highlight_name: true
 ---
 
-I’m an incoming doctoral student in mathematics at the University of Oxford and a member of Merton College, and I will be advised by [Heather Harrington](https://www.maths.ox.ac.uk/people/heather.harrington) and [Ulrike Tillmann](https://people.maths.ox.ac.uk/tillmann/). I’m interested in algebra, geometry, topology, and their real-life applications. 
+I’m an incoming doctoral student in mathematics at the University of Oxford and a member of Merton College, and I will be advised by [Heather Harrington](https://www.maths.ox.ac.uk/people/heather.harrington) and [Ulrike Tillmann](https://people.maths.ox.ac.uk/tillmann/). I’m interested in algebra, geometry, topology, and their applications. 
