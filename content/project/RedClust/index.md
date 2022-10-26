@@ -1,8 +1,7 @@
 ---
 title: RedClust.jl
 summary: A Julia package for Bayesian clustering using pairwise dissimilarities.
-tags: 
-  - academic
+tags: ['academic', 'statistics']
 # date: '2016-04-27T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).

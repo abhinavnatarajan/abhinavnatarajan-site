@@ -89,4 +89,4 @@ email: ''
 highlight_name: true
 ---
 
-I’m an incoming doctoral student in mathematics at the University of Oxford and a member of Merton College, and I will be advised by [Heather Harrington](https://www.maths.ox.ac.uk/people/heather.harrington) and [Ulrike Tillmann](https://people.maths.ox.ac.uk/tillmann/). I’m interested in algebra, geometry, topology, and their applications to the life sciences and data science. Sometimes I also do serious things like make music or go climbing. 
+I’m an incoming doctoral student in mathematics at the University of Oxford and a member of Merton College, and I will be advised by [Heather Harrington](https://www.maths.ox.ac.uk/people/heather.harrington) and [Ulrike Tillmann](https://people.maths.ox.ac.uk/tillmann/). I’m interested in algebra, geometry, topology, and their real-life applications. 

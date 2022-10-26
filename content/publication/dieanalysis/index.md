@@ -1,5 +1,6 @@
 ---
 title: "Unsupervised Statistical Learning for Die Analysis in Ancient Numismatics"
+tags: ['image processing', 'computer vision', 'clustering']
 authors:
 - Andreas Heinecke
 - Emanuel Mayer

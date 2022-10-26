@@ -27,6 +27,9 @@ main:
   - name: Projects
     url: '#projects'
     weight: 30
+  - name: Curiosities
+    weight: 35
+    url: '/curiosities/'
   - name: Contact
     url: '#contact'
     weight: 40  

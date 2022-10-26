@@ -19,6 +19,8 @@ authors:
 date: '12 Jul 2021' # dd mmm yyyy
 doi: '10.48550/arXiv.2107.05414'
 
+tags: ['statistics', 'clustering']
+
 # Schedule page publish date (NOT publication's date).
 # publishDate: '2017-01-01T00:00:00Z'
 
