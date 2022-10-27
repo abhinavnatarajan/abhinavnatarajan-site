@@ -72,7 +72,7 @@
               {{ range .Children }}
                 {{/* Only handle case where we are not on the home page */}}
                 {{ if gt (len .URL) 1 }}{{/* Ignore root URL */}}
-                  {{ $toplevel_has_active_child = eq $current_page.RelPermalink .URL }}
+                  {{ $toplevel_has_active_child = in $current_page.RelPermalink .URL }}
                 {{end}}
               {{ end }}
               <li class="nav-item dropdown">

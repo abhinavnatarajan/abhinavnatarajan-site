@@ -82,6 +82,8 @@
 {{- $scr.Set "menu_text_active" ($theme_day.menu_text_active | default $theme_day.primary | default ($scr.Get "primary")) -}}
 {{- $scr.Set "menu_title" ($theme_day.menu_title | default "#2b2b2b") -}}
 
+{{- $scr.Set "section_headings" ($theme_day.section_headings_color | default "black") -}}
+
 {{- $scr.Set "dark_menu_primary" ($theme_night.menu_primary | default "rgb(40, 42, 54)") -}}
 {{- $scr.Set "dark_menu_text" ($theme_night.menu_text | default "white") -}}
 {{- $scr.Set "dark_menu_text_active" ($theme_night.menu_text_active | default ($scr.Get "night_primary")) -}}

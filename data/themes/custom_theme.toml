@@ -18,6 +18,9 @@ name = "custom"
 	# Background
 	background = "rgb(255, 255, 255)"
 
+	# Section Headings
+	section_headings_color = "rgba(35, 39, 40, 0.68)"
+
 [dark]
 	# Primary
 	primary = "#1ca786"

@@ -52,6 +52,7 @@
 		color: unset;
 	}
 
+	// Color for section headings
 	h1, #about .section-subheading,
 	.portrait-title h3,
 	.article-metadata,
@@ -79,4 +80,11 @@
   color: $sta-link-hover !important;
   text-decoration: none !important;
   transition: color 0.3s ease;
+}
+
+.section-heading h1, 
+.portrait-title h3,
+.media .article-metadata,
+ul.ul-edu li .description p.institution {
+	color: $sta-section-headings;
 }
