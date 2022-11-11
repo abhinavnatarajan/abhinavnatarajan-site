@@ -22,11 +22,11 @@ links:
   - icon: download
     icon_pack: fas
     name: EXE
-    url: https://github.com/abhinavnatarajan/Xfeed/releases/download/v0.1.1/Xfeed.exe
+    url: https://github.com/abhinavnatarajan/Xfeed/releases/latest/download/Xfeed.exe
   - icon: download
     icon_pack: fas
     name: VST3
-    url: https://github.com/abhinavnatarajan/Xfeed/releases/download/v0.1.1/Xfeed.exe
+    url: https://github.com/abhinavnatarajan/Xfeed/releases/latest/download/Xfeed.vst3
 url_code: ''
 url_pdf: ''
 url_slides: ''
