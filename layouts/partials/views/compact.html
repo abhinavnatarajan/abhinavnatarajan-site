@@ -76,9 +76,10 @@
   <div class="ml-3">
     {{ $resource := partial "functions/get_featured_image.html" $item }}
     {{ with $resource }}
-      {{ $image := .Resize "150x webp" }}
+      {{/*  {{ $image := .Resize "150x webp" }}  */}}
+      {{ $image := . }}
       <a href="{{$link}}" {{ $target | safeHTMLAttr }}>
-        <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
+        <img src="{{ $image.RelPermalink }}" height="{{ mul (div $image.Height $image.Width) 150 }}" width="{{ 150 }}"
             alt="{{ $item.Title }}" loading="lazy">
       </a>
     {{end}}
