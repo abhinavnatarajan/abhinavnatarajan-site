@@ -16,13 +16,13 @@ content:
   autolink: true
 
   # Email form provider
-  form:
-    provider: netlify
-    formspree:
-      id:
-    netlify:
-      # Enable CAPTCHA challenge to reduce spam?
-      captcha: false
+  # form:
+  #   provider: netlify
+  #   formspree:
+  #     id:
+  #   netlify:
+  #     # Enable CAPTCHA challenge to reduce spam?
+  #     captcha: false
 
   # Contact details (edit or remove options as required)
   email: abhinav.natarajan@merton.ox.ac.uk
@@ -56,4 +56,4 @@ content:
 design:
   columns: '2'
 ---
-Drop me an email here if you'd like to get in touch. I'm always happy to discuss my work or answer any questions if I can!
+Drop me an email if you'd like to get in touch. I'm always happy to discuss my work or answer any questions if I can!

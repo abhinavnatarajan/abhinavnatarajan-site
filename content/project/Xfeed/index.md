@@ -11,6 +11,7 @@ date: '10 Nov 2022'
 # external_link: 'https://abhinavnatarajan.github.io/RedClust.jl'
 
 # image:
+# show_on_card: true
 #   caption: Photo by rawpixel on Unsplash
 #   focal_point: Smart
 
