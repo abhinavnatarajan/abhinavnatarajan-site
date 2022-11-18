@@ -101,7 +101,7 @@ features:
 
   # publications
 publications:
-  citation_style: ''
+  citation_style: '' # 'apa', 'mla', or ''
 
 # Extensions
 
