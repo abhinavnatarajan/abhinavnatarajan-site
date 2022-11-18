@@ -56,3 +56,4 @@ content:
 design:
   columns: '2'
 ---
+Drop me an email here if you'd like to get in touch. I'm always happy to discuss my work or answer any questions if I can!

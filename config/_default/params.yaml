@@ -99,6 +99,10 @@ features:
     api_key: ''
     zoom: 15
 
+  # publications
+publications:
+  citation_style: ''
+
 # Extensions
 
 # extensions:
