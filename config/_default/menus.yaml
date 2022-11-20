@@ -24,15 +24,12 @@ main:
     url: '/publication/'
     weight: 20
     parent: publication_top_level_menu_item
-  - name: Projects
-    url: '#projects'
+  - name: Software
+    url: '#software'
     weight: 30
-  - name: Curiosities
-    weight: 35
-    url: '/curiosities/'
   - name: Contact
     url: '#contact'
-    weight: 40  
-  - name: CV
-    url: 'https://www.dropbox.com/s/c4zlfy0wc8gvmb2/CV_Abhinav_Natarajan.pdf?dl=0'
+    weight: 40
+  - name: Curiosities
     weight: 50
+    url: '/curiosities/'

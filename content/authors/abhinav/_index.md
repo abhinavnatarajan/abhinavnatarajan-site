@@ -22,13 +22,12 @@ organizations:
     url: https://people.maths.ox.ac.uk/harrington/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include applied algebra, topology, geometry, and their applications. 
+bio: My research interests are in applied algebraic topology and geometry, statistics, and machine learning.
 
 # Interests to show in About widget
 interests:
-  - Applied algebraic topology
-  - Applied algebra
-  - Applied category theory
+  - Applied algebraic topology and geometry
+  # - Applied category theory
   - Statistics and machine learning
 
 # Education to show in About widget
@@ -52,6 +51,7 @@ social:
   - icon: envelope
     icon_pack: fas
     link: '/#contact'
+    label: My contact
     display:
       bio: true
       header: false
@@ -67,20 +67,33 @@ social:
   - icon: github
     icon_pack: fab
     link: https://github.com/abhinavnatarajan
-    label: My Github repos
+    label: My Github repositories
     display:
-      header: true
-      bio: false
+      bio: true
   # - icon: linkedin
   #   icon_pack: fab
   #   link: https://www.linkedin.com/
-
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
 # and uncomment the lines below.
   # - icon: cv
   #   icon_pack: ai
-  #   link: www.google.com
+  #   link: 'static/uploads/resume.pdf'
+  #   label: My CV
+  #   display:
+  #     bio: true
+  - icon: google-scholar
+    icon_pack: ai
+    link: https://scholar.google.com/citations?user=hT_KzXcAAAAJ&hl=en
+    label: My Google Scholar profile
+    display:
+      bio: true
+  - icon: orcid
+    icon_pack: ai
+    link: https://orcid.org/0000-0002-2563-6721
+    label: My OrcID profile
+    display:
+      bio: true
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ''
@@ -89,4 +102,6 @@ email: ''
 highlight_name: true
 ---
 
-I’m an incoming doctoral student in mathematics at the University of Oxford and a member of Merton College, and I will be advised by [Heather Harrington](https://www.maths.ox.ac.uk/people/heather.harrington) and [Ulrike Tillmann](https://people.maths.ox.ac.uk/tillmann/). I’m interested in algebra, geometry, topology, and their applications. 
+I’m an incoming doctoral student in mathematics at the University of Oxford and a member of Merton College, and I will be advised by [Heather Harrington](https://www.maths.ox.ac.uk/people/heather.harrington) and [Ulrike Tillmann](https://people.maths.ox.ac.uk/tillmann/). 
+
+{{< icon name="download" pack="fas" >}} Download my [CV](https://www.dropbox.com/s/c4zlfy0wc8gvmb2/CV_Abhinav_Natarajan.pdf?dl=0).

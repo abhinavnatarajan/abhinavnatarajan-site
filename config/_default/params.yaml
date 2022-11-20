@@ -105,15 +105,15 @@ publications:
 
 # Extensions
 
-# extensions:
+extensions:
   # cms:
   #   branch: main
   #   local_backend: false
-  # academicons:
-  #   enable: true
+  academicons:
+    enable: true
   # uncomment for CV icon
   # aiicons:
-  #   enable: true
+    # enable: true
 
 # Security
 
