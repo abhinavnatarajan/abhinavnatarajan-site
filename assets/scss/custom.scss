@@ -53,7 +53,7 @@
 	}
 
 	// Color for section headings
-	h1, #about .section-subheading,
+	.section-heading h1, #about .section-subheading,
 	.portrait-title h3,
 	.article-metadata,
 	ul.ul-edu li .description p.institution {
@@ -87,4 +87,12 @@
 .media .article-metadata,
 ul.ul-edu li .description p.institution {
 	color: $sta-section-headings;
+}
+
+.material-symbols-sharp {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
 }
