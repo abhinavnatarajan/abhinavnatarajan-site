@@ -1,9 +1,9 @@
 ---
-title: The mathematics of Wordle
+title: The Mathematics of Wordle
 summary: A list of Wordle-related resources.
 tags: ['games', 'optimisation']
 show_date: true
-date: 5 Oct 2022
+date: 05 Oct 2022
 type: post
 ---
 Wordle is an online puzzle similar to [Master Mind](https://en.wikipedia.org/wiki/Mastermind_(board_game)) where you must guess a secret word of fixed-length in six guesses. Each guess you make can potentially reveal information about the secret word through a coloured response code: a letter placed in the correct position is coloured green, a letter placed in the wrong position is coloured yellow, and a letter that is not present in the secret word is coloured grey. The guesses that you make must be from a list of allowed guesses, which are all (mostly common) English words, and the set of possible secret words is a (significantly smaller) subset of the allowed guesses. The usual variant of Wordle deals with 5-letter words, but variants with more or less letters exist (as well as variants with interesting changes to the rules). When I encountered this game, my first question was whether there was a way to solve it programmatically. Master Mind has well-known optimal strategies (for various reasonable definitions of *optimal*), so it did not seem like a stretch to imagine that Wordle should be easily solvable too. Unfortunately the solution space and guess space are arbitrarily constrained to be English words, whereas in Master Mind the solutions and guesses are numeric sequences with no constraints on the digits of the sequence. It turns out that there are still somewhat optimal strategies and upper bounds on how "badly" one can do. Here are some resources I found. 
