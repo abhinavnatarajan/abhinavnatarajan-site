@@ -36,6 +36,7 @@
 	}
 
 	.navbar .navbar-nav .nav-link:hover,
+	.nav-item .dropdown-item:not(.active):hover,
 	.nav-item .dropdown-item:not(.active):hover {
 		color: $sta-dark-link-hover !important;
 		transition: color 0.15s ease;
