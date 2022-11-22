@@ -27,9 +27,18 @@ main:
   - name: Software
     url: '#software'
     weight: 30
+  - name: Posts
+    weight: 40
+    identifier: post
+  - name: Recent posts
+    url: '#posts'
+    weight: 10
+    parent: post
+  - name: All posts
+    url: '/post/'
+    weight: 20
+    parent: post
   - name: Contact
     url: '#contact'
-    weight: 40
-  - name: Curiosities
     weight: 50
-    url: '/curiosities/'
+  
