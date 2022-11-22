@@ -35,7 +35,8 @@
 		box-shadow: 0 0 0 0.1rem $sta-night-primary-light;
 	}
 
-	.navbar .navbar-nav .nav-link:hover {
+	.navbar .navbar-nav .nav-link:hover,
+	.nav-item .dropdown-item:not(.active):hover {
 		color: $sta-dark-link-hover !important;
 		transition: color 0.3s ease;
 	}
@@ -71,9 +72,10 @@
 }
 
 // Change color of links in the navbar on hover
-.navbar .navbar-nav .nav-link:hover {
-		color: $sta-link-hover !important;
-		transition: color 0.3s ease;
+.navbar .navbar-nav .nav-link:hover,
+.nav-item .dropdown-item:not(.active):hover {
+	color: $sta-link-hover !important;
+	transition: color 0.3s ease;
 }
 
 // Change the color of article title links on hover
