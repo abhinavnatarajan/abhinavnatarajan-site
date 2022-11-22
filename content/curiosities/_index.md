@@ -1,6 +1,6 @@
 ---
 title: Curiosities
-summary: This is a list of things on the internet that I find interesting. 
+summary: This is a list of things that I find interesting. 
 
 # Optional header image (relative to `assets/media/` folder).
 header:
