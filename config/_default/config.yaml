@@ -34,7 +34,7 @@ module:
 ## ADVANCED
 ############################
 
-enableGitInfo: false
+enableGitInfo: true
 summaryLength: 30
 paginate: 10
 enableEmoji: true
@@ -78,3 +78,13 @@ sitemap:
   _merge: deep
 minify:
   _merge: deep
+frontmatter:
+  date: 
+   - date 
+   - publishDate 
+   - lastmod 
+  lastmod:
+   - lastmod
+   - :git 
+   - date 
+   - publishDate
