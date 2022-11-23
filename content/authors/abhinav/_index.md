@@ -17,7 +17,7 @@ organizations:
   - name: University of Oxford
     url: https://www.stanford.edu/
   - name: Centre for Topological Data Analysis
-    url: https://www1.maths.ox.ac.uk/groups/topological-data-analysis
+    url: https://www.maths.ox.ac.uk/groups/topological-data-analysis
   - name: Algebraic Systems Biology Group
     url: https://people.maths.ox.ac.uk/harrington/
 
@@ -26,7 +26,7 @@ bio: My research interests are in applied algebraic topology and geometry, stati
 
 # Interests to show in About widget
 interests:
-  - Applied algebraic topology and geometry
+  - Applied topology, geometry, and algebra
   # - Applied category theory
   - Statistics and machine learning
 
@@ -102,6 +102,8 @@ email: ''
 highlight_name: true
 ---
 
-I’m an incoming doctoral student in mathematics at the University of Oxford and a member of Merton College, and I will be advised by [Heather Harrington](https://www.maths.ox.ac.uk/people/heather.harrington) and [Ulrike Tillmann](https://people.maths.ox.ac.uk/tillmann/). 
+I’m an incoming doctoral student in mathematics at the University of Oxford, where I will be working on problems in applied topology, geometry, and algebra under the supervision of [Heather Harrington](https://www.maths.ox.ac.uk/people/heather.harrington) and [Ulrike Tillmann](https://people.maths.ox.ac.uk/tillmann/). I was previously a research assistant working on Bayesian high-dimensional clustering under the supervision of [Maria De Iorio](https://mariadeiorio.com) at the [National University of Singapore](https://nus.edu.sg). 
 
-{{< icon name="download" pack="fas" >}} Download my [CV](https://www.dropbox.com/s/c4zlfy0wc8gvmb2/CV_Abhinav_Natarajan.pdf?dl=0).
+{{< icon name="download" pack="fas" >}} Here is my [CV](https://www.dropbox.com/s/c4zlfy0wc8gvmb2/CV_Abhinav_Natarajan.pdf?dl=0).
+
+When I'm not doing math, I spend time doing things related to music or fitness (XOR, at least thus far).
