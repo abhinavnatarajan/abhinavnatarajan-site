@@ -26,7 +26,7 @@ Let us set up notation to make things easier. If $x$ and $y$ are configurations 
 7. Using the above, we also have that 8 is good. This means that every number of the form $3k + 2$ that is $\geq 8$ is good (again using (3)). 
 8. We are ony left with 2, 3, and 5 resistors. It is easy to check that 2 and 3 are not good by enumerating every possible arrangement of 2 and 3 resistors. The last case 5 is a bit special. There is a configuration of 5 resistors called the [Wheatstone bridge](https://en.wikipedia.org/wiki/Wheatstone_bridge) that has an effective resistance of 1$\Omega$, but this is deceptive. If you work out the math, there is no current going through the middle resistor since the voltage drop across it is zero (simply by symmetry). The remaining cases of 5 resistors can be checked by hand, and it turns out that 5 is *not* good.
 
-So our final answer to the first problem is that all $n$ are good except for 2, 3, and 5. 
+So our final answer to the first problem is that all values of $n$ are good except for 2, 3, and 5. 
 
 ## The second problem 
 The second problem has a similar solution to the first one. Call $n$ good if a square can be partitioned into $n$ squares. 

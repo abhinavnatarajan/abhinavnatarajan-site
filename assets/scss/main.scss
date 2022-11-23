@@ -8,6 +8,7 @@ $sta-lighten-percentage: 10%;
 
 $sta-font-size: {{ $scr.Get "font_size" }};
 $sta-font-size-small: {{ $scr.Get "font_size_small" }};
+$sta-font-size-small-multiplier: {{ $scr.Get "font_size_small_multiplier" }};
 
 $sta-font-body: "{{ $scr.Get "body_font" }}";
 $sta-font-heading: "{{ $scr.Get "heading_font" }}";

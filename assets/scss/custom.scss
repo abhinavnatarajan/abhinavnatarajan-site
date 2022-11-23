@@ -62,8 +62,6 @@
 	ul.ul-edu li .description p.institution {
 		color: $sta-dark-section-headings;
 	}
-
-	
 }
 
 .btn-primary:not(:disabled):not(.disabled).active:focus,
@@ -99,4 +97,112 @@ ul.ul-edu li .description p.institution {
   'wght' 400,
   'GRAD' 0,
   'opsz' 48
+}
+
+
+// Font overrides
+html {
+	font-kerning: normal;
+	line-height: 1.5;
+}
+.article-container {
+	.article-style p,
+	.pub-abstract {
+	text-align: justify;
+}
+}
+.navbar-brand {
+	font-weight: 500;
+}
+.navbar .navbar-nav .nav-link.active, 
+.dark .navbar .navbar-nav .nav-link.active {
+	font-weight: 500 !important;
+}
+
+.navbar, 
+.dark .navbar {
+	.dropdown-item.active,
+	.dropdown-item-active {
+		font-weight: 500 !important;
+	}
+}
+
+ul.ul-interests li {
+	font-size: unset;
+}
+
+ul.ul-edu li .description p.course {
+	font-size: unset;
+}
+  
+ul.ul-edu li .description p.institution {
+	font-size: #{$sta-font-size-small-multiplier}rem;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.portrait-title h2 { // name in about widget
+	font-size: 1.75rem;
+	font-weight: 400;
+	color: #000;
+	margin: 20px 0 10px;
+}
+
+.portrait-title h3 {
+font-size: 1rem;
+font-weight: 400;
+color: rgba(0, 0, 0, 0.54);
+margin: 0 0 10px;
+}
+
+.section-subheading {
+font-size: 1.25rem;
+font-family: $sta-font-heading, sans-serif;
+font-weight: 500;
+margin-top: 1rem;
+margin-bottom: 0.5rem;
+}
+
+// Publication authors
+.article-metadata {
+	letter-spacing: unset;
+}
+
+// Cards in listing
+.card-simple .article-title,
+.media.stream-item .article-title {
+  font-size: 1.25rem;
+}
+.card-simple .article-style {
+  margin-top: 2px;
+  font-size: #{$sta-font-size-small-multiplier}rem;
+}
+
+.article-date {
+	font-size: 0.8rem; // smaller than font-size-small
+}
+
+// Post subtitle in widget
+.media.stream-item .article-style {
+	font-size: unset;
+}
+
+// Author card at the bottom of posts
+.author-card .card-title {
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-weight: 500;
+	color: rgba(0, 0, 0, 0.84);
+  }
+
+.author-card .card-subtitle {
+	font-weight: 400;
+	font-size: #{$sta-font-size-small-multiplier}rem;
+	color: rgba(0, 0, 0, 0.54);
+	margin-bottom: 7px;
+  }
+
+.author-card .card-text {
+	color: rgba(0, 0, 0, 0.76);
+	font-size: #{$sta-font-size-small-multiplier}rem;
+	margin-bottom: 4px;
 }

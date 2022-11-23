@@ -8,8 +8,8 @@
 appearance:
   theme_day: custom_theme
   theme_night: custom_theme
-  font: Minimal
-  font_size: L
+  font: custom_fonts
+  font_size: M
   icon: false # icon for showing in browser title bar or tabs
 
 # SEO
@@ -54,7 +54,7 @@ footer:
 # Localization
 
 locale:
-  date_format: 'Jan 2 2006'
+  date_format: '2 Jan 2006'
   time_format: '3:04 PM'
   address_format: en-us
 
