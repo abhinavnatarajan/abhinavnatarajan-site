@@ -20,8 +20,8 @@ role: Doctoral student in mathematics
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: University of Oxford
-    url: https://www.stanford.edu/
+  - name: Mathematical Institute, University of Oxford
+    url: https://www.maths.ox.ac.uk/
   - name: Centre for Topological Data Analysis
     url: https://www.maths.ox.ac.uk/groups/topological-data-analysis
   - name: Algebraic Systems Biology Group
