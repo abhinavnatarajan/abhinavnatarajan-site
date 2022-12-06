@@ -6,6 +6,12 @@ title: Abhinav Natarajan
 first_name: Abhinav
 last_name: Natarajan
 
+# Pronunciation
+name_pronunciation: 
+  first: ɐbʱinɐʋ # this is for ruby style pronunication guide
+  last: nɐʈɐrɑːdʒɐn
+
+
 # Is this the primary user of the site?
 superuser: true
 

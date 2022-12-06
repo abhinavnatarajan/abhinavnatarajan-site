@@ -57,6 +57,7 @@
 	// Color for section headings
 	.section-heading h1, #about .section-subheading,
 	.portrait-title h3,
+	.portrait-title ruby rt,
 	.article-metadata,
 	.media .article-metadata,
 	ul.ul-edu li .description p.institution {
@@ -64,6 +65,7 @@
 	}
 }
 
+// Everything below this is light mode
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
@@ -91,6 +93,7 @@ ul.ul-edu li .description p.institution {
 	color: $sta-section-headings;
 }
 
+// For light mode symbol from google material icons
 .material-symbols-sharp {
   font-variation-settings:
   'FILL' 1,
@@ -140,18 +143,22 @@ ul.ul-edu li .description p.institution {
 	color: rgba(0, 0, 0, 0.6);
 }
 
-.portrait-title h2 { // name in about widget
+.portrait-title {
+	h2 { // name in about widget
 	font-size: 1.75rem;
 	font-weight: 400;
 	color: #000;
 	margin: 20px 0 10px;
-}
-
-.portrait-title h3 {
-font-size: 1rem;
-font-weight: 400;
-color: rgba(0, 0, 0, 0.54);
-margin: 0 0 10px;
+	}
+	h3 {
+		font-size: 1rem;
+		font-weight: 400;
+		color: rgba(0, 0, 0, 0.54);
+		margin: 0 0 10px;
+	}
+	ruby rt {
+		color: rgba(0, 0, 0, 0.54);
+	}
 }
 
 .section-subheading {

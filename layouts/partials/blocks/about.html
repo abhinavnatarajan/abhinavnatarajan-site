@@ -40,12 +40,14 @@
 
         <h2>
           {{- if $person.name_pronunciation -}}
+          <div style="ruby-position: under; ruby-align: center">
             <ruby>
-              <rb>{{ $person_page.Title }}</rb>
-              <rt>{{ $person.name_pronunciation }}</rt>
+              {{ $person.first_name }}<rt>[{{ $person.name_pronunciation.first }}]</rt>
+              &nbsp;{{ $person.last_name }}<rt>[{{ $person.name_pronunciation.last }}]</rt>
             </ruby>
+          </div>
           {{- else -}}
-            {{- $person_page.Title -}}
+          {{ $person_page.Title }}
           {{- end -}}
         </h2>
 
