@@ -42,8 +42,8 @@
           {{- if $person.name_pronunciation -}}
           <div style="ruby-position: under; ruby-align: center">
             <ruby>
-              {{ $person.first_name }}<rt>[{{ $person.name_pronunciation.first }}]</rt>
-              &nbsp;{{ $person.last_name }}<rt>[{{ $person.name_pronunciation.last }}]</rt>
+              {{ $person.first_name }}<rt><a href="https://en.wiktionary.org/wiki/Wiktionary:IPA_pronunciation_key" rel=”noopener” target="_blank">[{{ $person.name_pronunciation.first }}]</a></rt>
+              &nbsp;{{ $person.last_name }}<rt><a href="https://en.wiktionary.org/wiki/Wiktionary:IPA_pronunciation_key" rel=”noopener” target="_blank">[{{ $person.name_pronunciation.last }}]</a></rt>
             </ruby>
           </div>
           {{- else -}}
