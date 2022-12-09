@@ -66,13 +66,20 @@ image:
   focal_point: ''
   preview_only: false
 
+# Associated Software (optional).
+#   Associate this publication with one or more of your software.
+#   Simply enter your software's folder or file name without extension.
+#   E.g. `internal-software` references `content/software/internal-software/index.md`.
+#   Otherwise, set `software: []`.
+software:
+  - 'RedClust'
+
 # Associated Projects (optional).
-#   Associate this publication with one or more of your projects.
+#   Associate this publication with one or more of your software.
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects:
-  - 'RedClust'
+projects: []
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.

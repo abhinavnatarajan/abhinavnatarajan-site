@@ -59,27 +59,44 @@
   {{ i18n "btn_dataset" }}
 </a>
 {{ end }}
-{{ if $page.Params.projects }}
-{{ range $projindex, $projpage := $page.Params.projects }}
-  {{ with (site.GetPage (printf "project/%s" $projpage)) }}
-    {{ with .Param "external_link" }}
-      <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ . }}" target="_blank">
+{{ if $page.Params.software }}
+  {{ range $projindex, $projpage := $page.Params.software }}
+    {{ with (site.GetPage (printf "software/%s" $projpage)) }}
+      {{ with .Param "external_link" }}
+        <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ . }}" target="_blank">
+      {{ else }}
+        <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ .RelPermalink }}">
+      {{ end }}
+        {{ i18n "btn_software" }} {{ if lt 1 (len $page.Params.software) }} {{ add $projindex 1 }} {{ end }}
+      </a>
     {{ else }}
-      <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ .RelPermalink }}">
+      {{/* errorf "The `projects` parameter in `content/%s` references a project file, `content/project/%s`, which cannot be found. Please either set `projects = []` or fix the reference." $page.File.Path . */}}
     {{ end }}
-    {{ i18n "btn_project" }} {{ if lt 1 (len $page.Params.projects) }} {{ add $projindex 1 }} {{ end }}
-  </a>
-  {{ else }}
-    {{/* errorf "The `projects` parameter in `content/%s` references a project file, `content/project/%s`, which cannot be found. Please either set `projects = []` or fix the reference." $page.File.Path . */}}
   {{ end }}
 {{ end }}
+
+{{ if $page.Params.projects }}
+  {{ range $projindex, $projpage := $page.Params.software }}
+    {{ with (site.GetPage (printf "project/%s" $projpage)) }}
+      {{ with .Param "external_link" }}
+        <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ . }}" target="_blank">
+      {{ else }}
+        <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ .RelPermalink }}">
+      {{ end }}
+        {{ i18n "btn_project" }} {{ if lt 1 (len $page.Params.software) }} {{ add $projindex 1 }} {{ end }}
+      </a>
+    {{ else }}
+      {{/* errorf "The `projects` parameter in `content/%s` references a project file, `content/project/%s`, which cannot be found. Please either set `projects = []` or fix the reference." $page.File.Path . */}}
+    {{ end }}
+  {{ end }}
 {{ else }}
-{{ with $page.Params.url_project }}
-<a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ . }}" target="_blank" rel="noopener">
-  {{ i18n "btn_project" }}
-</a>
+  {{ with $page.Params.url_project }}
+    <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ . }}" target="_blank" rel="noopener">
+      {{ i18n "btn_project" }}
+    </a>
+  {{ end }}
 {{ end }}
-{{ end }}
+
 {{ with $page.Params.url_poster }}
   {{ $resource := $page.Resources.GetMatch . }}
   {{ if $resource }}

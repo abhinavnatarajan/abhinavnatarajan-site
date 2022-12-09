@@ -81,6 +81,9 @@
 - id: btn_project
   translation: Project
 
+- id: btn_software
+  translation: Software
+
 - id: btn_poster
   translation: Poster
 
