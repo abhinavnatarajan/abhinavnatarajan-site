@@ -41,7 +41,7 @@ education:
   courses:
     - course: DPhil in Mathematics
       institution: University of Oxford
-      year: incoming
+      year: current
     - course: MASt in Pure Mathematics
       institution: University of Cambridge
       year: 2022
