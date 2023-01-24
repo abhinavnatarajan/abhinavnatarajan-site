@@ -1,6 +1,5 @@
 import * as params from '@params';
 
-var decodeEmail = atob
 function uglyEmail (str) {
     return str.replace('@', ' [at] ');
 }
@@ -10,7 +9,7 @@ function reverseString(str) {
 }
 
 // only compute the email when it is within the viewport
-const emailToDisplay = uglyEmail(decodeEmail(params.email));
+const emailToDisplay = uglyEmail(atob(params.email));
 const emailLink = 'mailto: ' + atob(params.email);
 document.getElementById('person-email-text').textContent = emailToDisplay;
 let emailLinkTag = document.getElementById('person-email-link');

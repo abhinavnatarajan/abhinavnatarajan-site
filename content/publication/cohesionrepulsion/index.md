@@ -46,12 +46,15 @@ tags: []
 featured: true
 
 # Custom links (uncomment lines below)
-# links:
-# - name: arXiv
-#   url: https://arxiv.org/abs/2107.05414
+links:
+- name: Code
+  icon: github
+  icon_pack: fa-brands
+  url: 'https://github.com/abhinavnatarajan/RedClust.jl'
+  # url: https://arxiv.org/abs/2107.05414
 
 url_pdf: ''
-url_code: 'https://github.com/abhinavnatarajan/RedClust.jl'
+url_code: ''
 url_dataset: ''
 url_poster: ''
 url_project: ''
@@ -72,10 +75,13 @@ image:
 #   E.g. `internal-software` references `content/software/internal-software/index.md`.
 #   Otherwise, set `software: []`.
 software:
-  - 'RedClust'
+  - name: 'RedClust'
+    link_text: 'Julia package'
+    icon: julia
+    icon_pack: icomoon
 
 # Associated Projects (optional).
-#   Associate this publication with one or more of your software.
+#   Associate this publication with one or more of your projects.
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.

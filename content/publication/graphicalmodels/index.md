@@ -45,12 +45,14 @@ tags: []
 featured: true
 
 # Custom links (uncomment lines below)
-# links:
-# - name: arXiv
-#   url: https://arxiv.org/abs/2205.04324
+links:
+- name: Code
+  url: 'https://github.com/kristoforusbryant/cbmcmc'
+  icon: github
+  icon_pack: fa-brands
 
 url_pdf: ''
-url_code: 'https://github.com/kristoforusbryant/cbmcmc'
+url_code: ''
 url_dataset: ''
 url_poster: ''
 url_project: ''

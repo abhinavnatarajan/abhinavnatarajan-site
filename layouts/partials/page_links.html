@@ -34,7 +34,13 @@
 {{ with $resource }}
 <a href="#" class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}} js-cite-modal"
         data-filename="{{ .RelPermalink }}">
-  {{ i18n "btn_cite" }}
+  <i class="fa-solid fa-quote-left mr-1"></i>{{ i18n "btn_cite" }}
+</a>
+{{ end }}
+{{ with $page.Params.doi }}
+<a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="https://doi.org/{{ . }}" target="_blank" rel="noopener">
+  <i class="ai ai-doi"></i>
+  DOI
 </a>
 {{ end }}
 {{ with $page.Params.url_code }}
@@ -59,15 +65,21 @@
   {{ i18n "btn_dataset" }}
 </a>
 {{ end }}
-{{ if $page.Params.software }}
-  {{ range $projindex, $projpage := $page.Params.software }}
-    {{ with (site.GetPage (printf "software/%s" $projpage)) }}
+{{ with $page.Params.software }}
+  {{ range $projindex, $proj := $page.Params.software }}
+    {{ $pack := or $proj.icon_pack "fa-solid" }}
+    {{ $pack_prefix := $pack }}
+    {{ if in (slice "fa-brands" "fa-solid" "fa-regular" "fa-light fa-thin fa-duotone") $pack }}
+      {{ $pack_prefix = "fa" }}
+    {{ end }}
+    {{ with (site.GetPage (printf "software/%s" $proj.name)) }}
       {{ with .Param "external_link" }}
         <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ . }}" target="_blank">
       {{ else }}
         <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ .RelPermalink }}">
       {{ end }}
-        {{ i18n "btn_software" }} {{ if lt 1 (len $page.Params.software) }} {{ add $projindex 1 }} {{ end }}
+      {{ if $proj.icon }}<i class="{{ $pack }} {{ $pack_prefix }}-{{ $proj.icon }} {{if (or $proj.name $proj.link_text) }}mr-1{{end}}"></i>{{ end }}
+        {{ $proj.link_text }} {{ if lt 1 (len $page.Params.software) }} {{ add $projindex 1 }} {{ end }}
       </a>
     {{ else }}
       {{/* errorf "The `projects` parameter in `content/%s` references a project file, `content/project/%s`, which cannot be found. Please either set `projects = []` or fix the reference." $page.File.Path . */}}
@@ -149,15 +161,10 @@
   {{ i18n "btn_source" }}
 </a>
 {{ end }}
-{{ with $page.Params.doi }}
-<a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="https://doi.org/{{ . }}" target="_blank" rel="noopener">
-  DOI
-</a>
-{{ end }}
 {{ range $page.Params.links }}
-  {{ $pack := or .icon_pack "fas" }}
+  {{ $pack := or .icon_pack "fa-solid" }}
   {{ $pack_prefix := $pack }}
-  {{ if in (slice "fab" "fas" "far" "fal") $pack }}
+  {{ if in (slice "fa-brands" "fa-solid" "fa-regular" "fa-light fa-thin fa-duotone") $pack }}
     {{ $pack_prefix = "fa" }}
   {{ end }}
   {{ $link := .url | default "" }}

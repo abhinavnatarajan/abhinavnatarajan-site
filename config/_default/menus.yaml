@@ -13,31 +13,23 @@ main:
   # - name: Talks
   #   url: '#talks'
   #   weight: 40
-  - name: Publications
-    identifier: publication
+  - name: Research
+    identifier: research
     weight: 20
-  - name: Recent
-    url: '#publications'
-    weight: 10
-    parent: publication
-  - name: All
+  - name: Papers
     url: '/publication'
+    weight: 10
+    parent: research
+  - name: Slides
+    url: '/slides'
     weight: 20
-    parent: publication
+    parent: research
   - name: Software
-    url: '#software'
+    url: '/software'
     weight: 30
   - name: Posts
     weight: 40
-    identifier: post
-  - name: Recent posts
-    url: '#posts'
-    weight: 10
-    parent: post
-  - name: All posts
-    url: '/post/'
-    weight: 20
-    parent: post
+    url: '/post'
   - name: Contact
     url: '#contact'
     weight: 50

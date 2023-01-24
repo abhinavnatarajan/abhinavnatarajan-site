@@ -14,9 +14,13 @@ external_link: 'https://abhinavnatarajan.github.io/RedClust.jl'
 #   focal_point: Smart
 
 links:
+  - icon: book
+    icon_pack: fa-solid
+    name: Documentation
+    url: https://abhinavnatarajan.github.io/RedClust.jl/stable
   - icon: github
-    icon_pack: fab
-    name: Github
+    icon_pack: fa-brands
+    name: Code
     url: https://github.com/abhinavnatarajan/RedClust.jl
 url_code: ''
 url_pdf: ''

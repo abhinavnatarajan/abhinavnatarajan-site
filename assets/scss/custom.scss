@@ -93,16 +93,6 @@ ul.ul-edu li .description p.institution {
 	color: $sta-section-headings;
 }
 
-// For light mode symbol from google material icons
-.material-symbols-sharp {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
-}
-
-
 // Font overrides
 html {
 	font-kerning: normal;
@@ -212,4 +202,53 @@ margin-bottom: 0.5rem;
 	color: rgba(0, 0, 0, 0.76);
 	font-size: #{$sta-font-size-small-multiplier}rem;
 	margin-bottom: 4px;
+}
+
+// Google Material Icons
+.material-symbols-sharp {
+	font-variation-settings:
+	'FILL' 1,
+	'wght' 400,
+	'GRAD' 0,
+	'opsz' 48
+  }
+  
+.material-symbols-rounded {
+font-variation-settings:
+'FILL' 1,
+'wght' 400,
+'GRAD' 0,
+'opsz' 48;
+}
+
+// Icomoon icons
+@font-face {
+	font-family: 'icomoon';
+	src:  url('/webfonts/icomoon.eot?8jh2oc');
+	src:  url('/webfonts/icomoon.eot?8jh2oc#iefix') format('embedded-opentype'),
+	  url('/webfonts/icomoon.ttf?8jh2oc') format('truetype'),
+	  url('/webfonts/icomoon.woff?8jh2oc') format('woff'),
+	  url('/webfonts/icomoon.svg?8jh2oc#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+  }
+  
+.icomoon {
+/* use !important to prevent issues with browser extensions that change fonts */
+font-family: 'icomoon' !important;
+speak: never;
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+text-transform: none;
+line-height: 1;
+
+/* Better Font Rendering =========== */
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.icomoon-julia::before {
+content: "\e900";
 }

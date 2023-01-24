@@ -113,9 +113,8 @@ extensions:
     enable: true
   materialicons:
     enable: true
-  # uncomment for CV icon
-  # aiicons:
-    # enable: true
+  fontawesomeicons: 
+    enable: true
 
 # Security
 
