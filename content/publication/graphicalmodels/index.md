@@ -31,8 +31,8 @@ publication_types: ['3']
 
 # Publication name and optional abbreviated publication name.
 # publication: In *Wowchemy Conference*
-publication: arXiv 
-publication_short: arXiv
+publication: ArXiv 
+publication_short: ArXiv
 
 abstract: Gaussian graphical models are useful tools for conditional independence structure inference of multivariate random variables. Unfortunately, Bayesian inference of latent graph structures is challenging due to exponential growth of $\mathcal{G}_n$, the set of all graphs in n vertices. One approach that has been proposed to tackle this problem is to limit search to subsets of $\mathcal{G}_n$. In this paper, we study subsets that are vector subspaces with the cycle space $C_n$ as main example. We propose a novel prior on $C_n$ based on linear combinations of cycle basis elements and present its theoretical properties. Using this prior, we implemented a Markov chain Monte Carlo algorithm and show that (i) posterior edge inclusion estimates compared to the standard technique are comparable despite searching a smaller graph space and (ii) the vector space perspective enables straightforward MCMC algorithms. 
 
@@ -48,7 +48,7 @@ featured: true
 links:
 - name: Code
   url: 'https://github.com/kristoforusbryant/cbmcmc'
-  icon: github
+  icon: fa-github
   icon_pack: fa-brands
 
 url_pdf: ''

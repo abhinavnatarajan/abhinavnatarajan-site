@@ -3,7 +3,7 @@ title: RedClust.jl
 summary: A Julia package for Bayesian clustering using pairwise dissimilarities.
 tags: ['academic', 'statistics']
 
-lastmod: '22 Oct 2022'
+lastmod: '14 Mar 2023'
 date: '04 Oct 2022'
 
 # Optional external URL for project (replaces project detail page).
@@ -14,11 +14,15 @@ external_link: 'https://abhinavnatarajan.github.io/RedClust.jl'
 #   focal_point: Smart
 
 links:
-  - icon: book
+  - icon: fa-file-lines
+    icon_pack: fa-regular
+    name: Publication
+    url: publication/cohesionrepulsion
+  - icon: fa-book
     icon_pack: fa-solid
     name: Documentation
     url: https://abhinavnatarajan.github.io/RedClust.jl/stable
-  - icon: github
+  - icon: fa-github
     icon_pack: fa-brands
     name: Code
     url: https://github.com/abhinavnatarajan/RedClust.jl

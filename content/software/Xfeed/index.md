@@ -16,15 +16,15 @@ date: '10 Nov 2022'
 #   focal_point: Smart
 
 links:
-  - icon: download
+  - icon: fa-download
     icon_pack: fa-solid
     name: VST3
     url: https://github.com/abhinavnatarajan/Xfeed/releases/latest/download/Xfeed.vst3
-  - icon: download
+  - icon: fa-download
     icon_pack: fa-solid
     name: EXE
     url: https://github.com/abhinavnatarajan/Xfeed/releases/latest/download/Xfeed.exe
-  - icon: github
+  - icon: fa-github
     icon_pack: fa-brands
     name: Code
     url: https://github.com/abhinavnatarajan/Xfeed

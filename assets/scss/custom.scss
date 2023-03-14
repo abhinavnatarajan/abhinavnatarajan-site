@@ -98,15 +98,18 @@ html {
 	font-kerning: normal;
 	line-height: 1.5;
 }
+
 .article-container {
 	.article-style p,
 	.pub-abstract {
 	text-align: justify;
+	}
 }
-}
+
 .navbar-brand {
 	font-weight: 500;
 }
+
 .navbar .navbar-nav .nav-link.active, 
 .dark .navbar .navbar-nav .nav-link.active {
 	font-weight: 500 !important;
@@ -164,11 +167,19 @@ margin-bottom: 0.5rem;
 	letter-spacing: unset;
 }
 
+// Journal name
+.li-cite-journal {
+	font-style: italic;
+	color: inherit;
+	font-size: 1rem;
+}
+
 // Cards in listing
 .card-simple .article-title,
 .media.stream-item .article-title {
   font-size: 1.25rem;
 }
+
 .card-simple .article-style {
   margin-top: 2px;
   font-size: #{$sta-font-size-small-multiplier}rem;
@@ -249,6 +260,10 @@ line-height: 1;
 -moz-osx-font-smoothing: grayscale;
 }
 
-.icomoon-julia::before {
+.icon-julia:before {
 content: "\e900";
+}
+
+.icon-file-pdf:before {
+	content: "\eadf";
 }

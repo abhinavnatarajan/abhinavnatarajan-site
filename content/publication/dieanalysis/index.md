@@ -22,8 +22,8 @@ doi: "10.48550/arXiv.2112.00290"
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: arXiv
-publication_short: arXiv
+publication: ArXiv
+publication_short: ArXiv
 
 abstract: Die analysis is an essential numismatic method, and an important tool of ancient economic history. Yet, manual die studies are too labor-intensive to comprehensively study large coinages such as those of the Roman Empire. We address this problem by proposing a model for unsupervised computational die analysis, which can reduce the time investment necessary for large-scale die studies by several orders of magnitude, in many cases from years to weeks. From a computer vision viewpoint, die studies present a challenging unsupervised clustering problem, because they involve an unknown and large number of highly similar semantic classes of imbalanced sizes. We address these issues through determining dissimilarities between coin faces derived from specifically devised Gaussian process-based keypoint features in a Bayesian distance clustering framework. The efficacy of our method is demonstrated through an analysis of 1135 Roman silver coins struck between 64-66 C.E.
 
@@ -34,7 +34,7 @@ tags: []
 featured: true
 
 # links:
-# - name: "arXiv"
+# - name: "ArXiv"
 #   url: "https://arxiv.org/abs/2112.00290"
 
 url_pdf: 

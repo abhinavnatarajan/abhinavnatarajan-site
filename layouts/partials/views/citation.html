@@ -13,10 +13,11 @@
     ({{- $item.Date.Format "2006" -}}).
     <a href="{{ $item.RelPermalink }}">{{ $item.Title }}</a>.
     {{ if $item.Params.publication_short }}
-      {{- $item.Params.publication_short | markdownify -}}.
+    <span class="article-metadata li-cite-journal">{{- trim ($item.Params.publication_short | markdownify) "." -}}</span>.
     {{ else if $item.Params.publication }}
-      {{- $item.Params.publication | markdownify -}}.
+    <span class="article-metadata li-cite-journal">{{- $item.Params.publication | markdownify -}}</span>.
     {{ end }}
+    </span>
 
   {{ else if eq $citation_style "mla" }}
     {{/* MLA Style */}}
@@ -25,9 +26,9 @@
     </span>
     <a href="{{ $item.RelPermalink }}">{{ $item.Title }}</a>.
     {{ if $item.Params.publication_short }}
-      {{- $item.Params.publication_short | markdownify -}},
+    <span class="article-metadata li-cite-journal">{{- trim ($item.Params.publication_short | markdownify) "." -}}</span>,
     {{ else if $item.Params.publication }}
-      {{- $item.Params.publication | markdownify -}},
+    <span class="article-metadata li-cite-journal">{{- $item.Params.publication | markdownify -}}</span>,
     {{ end }}
     {{- $item.Date.Format "2006" -}}.
 
@@ -39,13 +40,23 @@
     <span class="article-metadata li-cite-author">
       {{ partial "page_metadata_authors" $item }}.
     </span>
-    {{ if $item.Params.publication_short }}
-      {{- $item.Params.publication_short | markdownify -}}.
-    {{ else if $item.Params.publication }}
-      {{- $item.Params.publication | markdownify -}}.
+    {{ $vol_iss_pg := "" }}
+    {{ with $item.Params.volume }}
+     {{ $vol_iss_pg = (print ", " .) }} 
     {{ end }}
-
-  {{ end }}
+    {{ with $item.Params.number }}
+    {{ $vol_iss_pg = (print $vol_iss_pg "(" . ")") }}
+    {{ end }}
+    {{ with $item.Params.pages }}
+    {{ $vol_iss_pg = (print $vol_iss_pg ", " .) }} 
+    {{ end }}
+    {{ $vol_iss_pg = (print $vol_iss_pg ".") }}
+    {{ if $item.Params.publication_short }} 
+    <span class="li-cite-journal"> {{- trim ($item.Params.publication_short | markdownify) "." -}} </span> {{- $vol_iss_pg -}}
+    {{ else if $item.Params.publication }}
+    <span class="li-cite-journal"> {{- $item.Params.publication | markdownify -}} </span> {{- $vol_iss_pg -}}
+    {{ end }}
+    {{ end }}
 
   {{ if $has_attachments }}
     <div class="btn-links">
