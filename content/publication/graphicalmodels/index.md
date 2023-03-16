@@ -1,5 +1,5 @@
 ---
-title: 'On a wider class of prior distributions for graphical models'
+title: 'On a Wider Class of Prior Distributions for Graphical Models'
 
 tags: ['statistics', 'graphs']
 
