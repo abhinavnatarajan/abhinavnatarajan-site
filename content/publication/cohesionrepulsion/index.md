@@ -48,6 +48,10 @@ featured: true
 
 # Custom links (uncomment lines below)
 links:
+- name: Arxiv
+  url: https://arxiv.org/abs/2107.05414
+  icon: icon-file-pdf
+  icon_pack: icomoon
 - name: Code for figures
   icon: fa-github
   icon_pack: fa-brands
