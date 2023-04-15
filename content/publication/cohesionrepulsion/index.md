@@ -18,7 +18,7 @@ authors:
 
 date: '09 Mar 2023' # dd mmm yyyy
 
-tags: ['statistics', 'clustering']
+tags: ['statistics', 'unsupervised clustering', 'high dimensional clustering', 'Bayesian clustering', 'composite likelihood', 'pseudolikelihood', 'random partition model', 'product partition model', 'microclustering']
 
 # Schedule page publish date (NOT publication's date).
 # publishDate: '2017-01-01T00:00:00Z'
@@ -48,15 +48,12 @@ featured: true
 
 # Custom links (uncomment lines below)
 links:
-- name: Arxiv
-  url: https://arxiv.org/abs/2107.05414
-  icon: icon-file-pdf
-  icon_pack: icomoon
 - name: Code for figures
   icon: fa-github
   icon_pack: fa-brands
   url: 'https://github.com/abhinavnatarajan/RedClust.jl/tree/examples'
 
+arxiv_id: '2107.05414'
 url_pdf: ''
 url_code: ''
 url_dataset: ''
@@ -89,7 +86,7 @@ software:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects: []
+# projects: []
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.

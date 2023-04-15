@@ -42,21 +42,24 @@
     </span>
     {{ $vol_iss_pg := "" }}
     {{ with $item.Params.volume }}
-     {{ $vol_iss_pg = (print ", " .) }} 
+      {{ $vol_iss_pg = (print ", " .) }} 
     {{ end }}
     {{ with $item.Params.number }}
-    {{ $vol_iss_pg = (print $vol_iss_pg "(" . ")") }}
+      {{ $vol_iss_pg = (print $vol_iss_pg "(" . ")") }}
     {{ end }}
     {{ with $item.Params.pages }}
-    {{ $vol_iss_pg = (print $vol_iss_pg ", " .) }} 
+      {{ $vol_iss_pg = (print $vol_iss_pg ", " .) }} 
     {{ end }}
     {{ $vol_iss_pg = (print $vol_iss_pg ".") }}
     {{ if $item.Params.publication_short }} 
-    <span class="li-cite-journal"> {{- trim ($item.Params.publication_short | markdownify) "." -}} </span> {{- $vol_iss_pg -}}
+      <span class="li-cite-journal"> {{- trim ($item.Params.publication_short | markdownify) "." -}} </span> {{- $vol_iss_pg -}}
     {{ else if $item.Params.publication }}
-    <span class="li-cite-journal"> {{- $item.Params.publication | markdownify -}} </span> {{- $vol_iss_pg -}}
+      <span class="li-cite-journal"> {{- $item.Params.publication | markdownify -}} </span> {{- $vol_iss_pg -}}
     {{ end }}
+    {{ with $item.Params.note }}
+      {{- trim ( . | markdownify) "." -}} .
     {{ end }}
+  {{ end }}
 
   {{ if $has_attachments }}
     <div class="btn-links">

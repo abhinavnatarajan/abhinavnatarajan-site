@@ -204,6 +204,9 @@
 - id: pub_patent
   translation: Patent
 
+- id: pub_accepted_manuscript
+  translation: Accepted manuscript
+
 # Project details
 
 - id: open_project_site

@@ -10,7 +10,7 @@ authors:
 # - "Equal contribution"
 # - "Equal contribution"
 date: "01 Dec 2021"
-doi: "10.48550/arXiv.2112.00290"
+# doi: "10.48550/arXiv.2112.00290"
 
 # Schedule page publish date (NOT publication's date).
 # publishDate: "2017-01-01T00:00:00Z"
@@ -30,13 +30,14 @@ abstract: Die analysis is an essential numismatic method, and an important tool 
 # Summary. An optional shortened abstract.
 summary: Unsupervised computational die analysis for ancient numismatic studies.
 
-tags: []
+tags: ['computer vision', 'digital numismatics', 'computational die analysis', 'Bayesian clustering', 'microclustering', 'Roman coins', 'ancient coins', 'unsupervised clustering']
 featured: true
 
 # links:
 # - name: "ArXiv"
 #   url: "https://arxiv.org/abs/2112.00290"
 
+arxiv_id: '2112.00290'
 url_pdf: 
 url_code: ''
 url_dataset: ''
