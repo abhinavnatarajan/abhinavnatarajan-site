@@ -15,9 +15,9 @@ authors:
 #   - 'Equal contribution'
 #   - 'Equal contribution'
 
-date: '15 Mar 2024' # dd mmm yyyy
+date: '09 June 2023' # dd mmm yyyy
 publishDate: '15 Apr 2023' # include this so that the page is rendered despite the date being in the future
-# doi: '10.48550/arXiv.2205.04324'
+doi: '10.1017/jpr.2023.33'
 
 # Schedule page publish date (NOT publication's date).
 # publishDate: '2017-01-01T00:00:00Z'
@@ -26,17 +26,17 @@ publishDate: '15 Apr 2023' # include this so that the page is rendered despite t
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent; 9 = Accepted manuscript
-publication_types: ['9']
+publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
 # publication: In *Wowchemy Conference*
 publication: Journal of Applied Probability
 # publication_short:
 
-volume: 61
-number: 1
+# volume: 61
+# number: 1
 
-note: To appear.
+# note: To appear.
 
 abstract: Gaussian graphical models are useful tools for conditional independence structure inference of multivariate random variables. Unfortunately, Bayesian inference of latent graph structures is challenging due to exponential growth of $\mathcal{G}_n$, the set of all graphs in n vertices. One approach that has been proposed to tackle this problem is to limit search to subsets of $\mathcal{G}_n$. In this paper, we study subsets that are vector subspaces with the cycle space $C_n$ as main example. We propose a novel prior on $C_n$ based on linear combinations of cycle basis elements and present its theoretical properties. Using this prior, we implemented a Markov chain Monte Carlo algorithm and show that (i) posterior edge inclusion estimates compared to the standard technique are comparable despite searching a smaller graph space and (ii) the vector space perspective enables straightforward MCMC algorithms. 
 
@@ -55,7 +55,7 @@ links:
   icon: fa-github
   icon_pack: fa-brands
 
-arxiv_id: '2205.04324'
+# arxiv_id: '2205.04324'
 url_pdf: ''
 url_code: ''
 url_dataset: ''
