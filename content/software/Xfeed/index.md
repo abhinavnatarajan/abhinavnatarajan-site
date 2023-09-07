@@ -1,7 +1,7 @@
 ---
 title: Xfeed
 summary: Audio plugin for spatial externalisation of headphone audio.
-tags: ['personal', 'DSP']
+tags: ['audio', 'DSP']
 
 lastmod: '11 Nov 2022'
 date: '10 Nov 2022'

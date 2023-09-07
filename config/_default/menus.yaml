@@ -16,16 +16,20 @@ main:
   - name: Research
     identifier: research
     weight: 20
-  - name: Papers
-    url: '/publication'
-    weight: 10
-    parent: research
+    url: '#publications'
+  # - name: See all
+  #   url: 'publication'
+  #   weight: 10
+  #   parent: research
   - name: Software
-    url: '/software'
+    url: '#software'
     weight: 30
-  - name: Posts
-    weight: 40
-    url: '/post'
+  # - name: 'Talks'
+  #   url: '/slides'
+  #   weight: 40
+  # - name: Posts
+  #   weight: 40
+  #   url: '/post'
   - name: Contact
     url: '#contact'
     weight: 50

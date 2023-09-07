@@ -2,7 +2,7 @@
 # An instance of the Pages widget.
 # Documentation: https://wowchemy.com/docs/page-builder/
 widget: collection
-active: false
+active: true
 
 # This file represents a page section.
 headless: true
@@ -10,12 +10,12 @@ headless: true
 # Order that this section appears on the page.
 weight: 30
 
-title: Recent Publications
+title: Research
 subtitle: ''
 
 content:
   archive:
-    enable: true
+    enable: false
     text: See all
     link: ./publication/
   # Filter on criteria
@@ -35,6 +35,7 @@ content:
   offset: 0
   # Page order: descending (desc) or ascending (asc) date.
   order: desc
+
 design:
   # Choose a view for the listings: 
   view: citation
