@@ -1,0 +1,7 @@
+{{ $resources := .Get 0 }}
+{{ $scale := .Get 1 }}
+<div style="{{ if $scale }}-ms-zoom: {{ $scale }}; -moz-transform: scale({{ $scale }}); -moz-transform-origin: top; -o-transform: scale({{ $scale }}); -o-transform-origin: top; -webkit-transform: scale({{ $scale }}); -webkit-transform-origin: top;{{ end }}">
+{{ with .Page.Resources.GetMatch $resources }}
+{{ .Content }}
+{{ end }}
+</div>

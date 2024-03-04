@@ -15,8 +15,8 @@ authors:
 #   - 'Equal contribution'
 #   - 'Equal contribution'
 
-date: '09 June 2023' # dd mmm yyyy
-publishDate: '15 Apr 2023' # include this so that the page is rendered despite the date being in the future
+date: '01 Mar 2024' # dd mmm yyyy
+# publishDate: '04 March 2024' # include this so that the page is rendered despite the date being in the future
 doi: '10.1017/jpr.2023.33'
 
 # Schedule page publish date (NOT publication's date).
@@ -33,8 +33,8 @@ publication_types: ['2']
 publication: Journal of Applied Probability
 # publication_short:
 
-# volume: 61
-# number: 1
+volume: 61
+number: 1
 
 # note: To appear.
 
@@ -55,7 +55,7 @@ links:
   icon: fa-github
   icon_pack: fa-brands
 
-# arxiv_id: '2205.04324'
+arxiv_id: '2205.04324'
 url_pdf: ''
 url_code: ''
 url_dataset: ''

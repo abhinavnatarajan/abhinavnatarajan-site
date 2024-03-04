@@ -5,10 +5,11 @@ title: "Profiling in Python 3.x"
 summary: "What, why, when, and how"
 authors: [abhinav]
 tags: []
-categories: ["internal", "coding"]
+categories: ["coding"]
 date: 02 February 2023
 _build:
   list: false
+  
 slides:
   # Choose a theme from https://github.com/hakimel/reveal.js#theming
   theme: white

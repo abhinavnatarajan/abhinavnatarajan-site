@@ -1,0 +1,8 @@
+{{ $file := .Get 0 }}
+{{ $scale := .Get 1 }}
+{{ $image := .Page.Resources.GetMatch $file }}
+{{ if $scale }}
+<img src="{{ $image.RelPermalink }}" width="{{ math.Round (mul $image.Width $scale) }}" height="{{ math.Round (mul $image.Height $scale) }}">
+{{ else }}
+<img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+{{ end }}

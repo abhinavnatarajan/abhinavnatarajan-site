@@ -24,9 +24,9 @@ main:
   - name: Software
     url: '#software'
     weight: 30
-  # - name: 'Talks'
-  #   url: '/slides'
-  #   weight: 40
+  - name: 'Talks'
+    url: '#talks'
+    weight: 40
   # - name: Posts
   #   weight: 40
   #   url: '/post'
