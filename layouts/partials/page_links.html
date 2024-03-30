@@ -27,18 +27,22 @@
 </a>
 {{ end }}
 
+{{ if $page.Params.external_link }}
 {{ with $page.Params.doi }}
 <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="https://doi.org/{{ . }}" target="_blank" rel="noopener">
   <i class="ai ai-doi"></i>
   DOI
 </a>
 {{ end }}
+{{ end }}
 
+{{ if or $page.Params.external_link $page.Params.doi }}
 {{ with $page.Params.arxiv_id }}
 <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="https://arxiv.com/abs/{{ . }}" target="_blank" rel="noopener">
   <i class="icomoon icon-file-pdf"></i>
   Arxiv
 </a>
+{{ end }}
 {{ end }}
 
 {{ with $page.Params.url_code }}
@@ -68,7 +72,7 @@
     {{ $pack := or $proj.icon_pack "fa-solid" }}
     {{ with (site.GetPage (printf "software/%s" $proj.name)) }}
       {{ with .Param "external_link" }}
-        <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ . }}" target="_blank">
+        <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ . }}" target="_blank" rel="noopener">
       {{ else }}
         <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ .RelPermalink }}">
       {{ end }}
@@ -85,7 +89,7 @@
   {{ range $projindex, $projpage := $page.Params.software }}
     {{ with (site.GetPage (printf "project/%s" $projpage)) }}
       {{ with .Param "external_link" }}
-        <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ . }}" target="_blank">
+        <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ . }}" target="_blank" rel="noopener">
       {{ else }}
         <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ .RelPermalink }}">
       {{ end }}

@@ -53,7 +53,7 @@ links:
   icon_pack: fa-brands
   url: 'https://github.com/abhinavnatarajan/RedClust.jl/tree/examples'
 
-# arxiv_id: '2107.05414'
+arxiv_id: '2107.05414'
 url_pdf: ''
 url_code: ''
 url_dataset: ''
