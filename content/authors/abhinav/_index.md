@@ -22,8 +22,6 @@ role: Doctoral student in mathematics
 organizations:
   - name: Mathematical Institute, University of Oxford
     url: https://www.maths.ox.ac.uk/
-  - name: Centre for Topological Data Analysis
-    url: https://www.maths.ox.ac.uk/groups/topological-data-analysis
   - name: Algebraic Systems Biology Group
     url: https://people.maths.ox.ac.uk/harrington/
 
@@ -32,9 +30,10 @@ bio: My research interests are in applied algebraic topology and geometry, stati
 
 # Interests to show in About widget
 interests:
-  - Applied topology, geometry, and algebra
-  # - Applied category theory
-  - Statistics and machine learning
+  - Computational topology and discrete Morse theory
+  - Multiparameter persistence
+  - Cellular sheaves
+  - Bayesian statistics
 
 # Education to show in About widget
 education:
