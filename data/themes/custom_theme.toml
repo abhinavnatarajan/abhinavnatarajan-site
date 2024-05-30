@@ -23,17 +23,17 @@ name = "custom"
 
 [dark]
 	# Primary
-	primary = "#1ca786"
+	primary = "#da0077"
 
 	# Menu
-	menu_primary = "rgb(40, 42, 54)"
+	menu_primary = "#21252c"
 
 	# Home sections
-	home_section_odd = "hsla(231, 15%, 18%, 1)"
-	home_section_even = "hsla(231, 15%, 16%, 1)"
+	home_section_odd = "#1E2127"
+	home_section_even = "#21252c"
 
 	# Background
-	background = "hsla(231, 15%, 16%, 1)"
+	background = "#1E2127"
 
 	# Section Headings
-	section_headings_color = "rgb(152, 166, 173)"
+	section_headings_color = "#eeeeee"
