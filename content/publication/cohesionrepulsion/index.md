@@ -30,12 +30,12 @@ tags: ['statistics', 'unsupervised clustering', 'high dimensional clustering', '
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-# publication: In *Wowchemy Conference*
-publication: Journal of the American Statistical Association
-# publication_short: J. Am. Stat. Assoc.
+journal: Journal of the American Statistical Association
+# journal_short: J. Am. Stat. Assoc.
 # volume: 2
 # number: 10
 # pages: 3-4
+# note: to appear
 doi: '10.1080/01621459.2023.2191821'
 
 abstract: Clustering in high-dimensions poses many statistical challenges. While traditional distance-based clustering methods are computationally feasible, they lack probabilistic interpretation and rely on heuristics for estimation of the number of clusters. On the other hand, probabilistic model-based clustering techniques often fail to scale and devising algorithms that are able to effectively explore the posterior space is an open problem. Based on recent developments in Bayesian distance-based clustering, we propose a hybrid solution that entails defining a likelihood on pairwise distances between observations. The novelty of the approach consists in including both cohesion and repulsion terms in the likelihood, which allows for cluster identifiability. This implies that clusters are composed of objects which have small "dissimilarities" among themselves (cohesion) and similar dissimilarities to observations in other clusters (repulsion). We show how this modelling strategy has interesting connection with existing proposals in the literature as well as a decision-theoretic interpretation. The proposed method is computationally efficient and applicable to a wide variety of scenarios. We demonstrate the approach in a simulation study and an application in digital numismatics. 
@@ -95,13 +95,3 @@ software:
 #   Otherwise, set `slides: ""`.
 # slides: example
 ---
-
-<!-- {{% callout note %}}
-Click the _Cite_ button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-{{% /callout %}}
-
-{{% callout note %}}
-Create your slides in Markdown - click the _Slides_ button to check out the example.
-{{% /callout %}} -->
-
-<!-- Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). -->

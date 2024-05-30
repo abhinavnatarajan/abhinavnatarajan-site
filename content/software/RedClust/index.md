@@ -7,24 +7,24 @@ lastmod: '14 Mar 2023'
 date: '04 Oct 2022'
 
 # Optional external URL for project (replaces project detail page).
-external_link: 'https://juliapackages.com/packages/redclust'
+external_link: 'https://abhinavnatarajan.github.io/RedClust.jl/stable'
 
 # image:
 #   caption: Photo by rawpixel on Unsplash
 #   focal_point: Smart
 
+publication:
+  - name: cohesionrepulsion
+    text: Research paper
+
 links:
-  - icon: fa-file-lines
-    icon_pack: fa-regular
-    name: Publication
-    url: publication/cohesionrepulsion
-  - icon: fa-book
-    icon_pack: fa-solid
-    name: Documentation
-    url: https://abhinavnatarajan.github.io/RedClust.jl/stable
+  # - icon: fa-file-lines
+  #   icon_pack: fa-regular
+  #   name: Research paper
+  #   url: publication/cohesionrepulsion
   - icon: fa-github
     icon_pack: fa-brands
-    name: Code
+    name: Source Code
     url: https://github.com/abhinavnatarajan/RedClust.jl
 url_code: ''
 url_pdf: ''

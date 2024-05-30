@@ -27,22 +27,18 @@
 </a>
 {{ end }}
 
-{{ if $page.Params.external_link }}
 {{ with $page.Params.doi }}
 <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="https://doi.org/{{ . }}" target="_blank" rel="noopener">
   <i class="ai ai-doi"></i>
   DOI
 </a>
 {{ end }}
-{{ end }}
 
-{{ if or $page.Params.external_link $page.Params.doi }}
 {{ with $page.Params.arxiv_id }}
 <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="https://arxiv.com/abs/{{ . }}" target="_blank" rel="noopener">
   <i class="icomoon icon-file-pdf"></i>
   Arxiv
 </a>
-{{ end }}
 {{ end }}
 
 {{ with $page.Params.url_code }}
@@ -67,12 +63,34 @@
   {{ i18n "btn_dataset" }}
 </a>
 {{ end }}
+{{ with $page.Params.publication }}
+  {{ range $projindex, $proj := $page.Params.publication }}
+    {{ $pack := or $proj.icon_pack "fa-solid" }}
+    {{ $icon := or $proj.icon "fa-book" }}
+    {{ with (site.GetPage (printf "publication/%s" $proj.name)) }}
+      {{ $link := .RelPermalink }}
+      {{ if .Params.external_link }}
+        {{ $link = .Params.external_link }}
+      {{ else if .Params.doi }}
+        {{ $link = printf "%s%s" "https://doi.org/" .Params.doi }}
+      {{ else if .Params.arxiv_id }}
+        {{ $link = printf "%s%s" "https://arxiv.org/abs/" .Params.arxiv_id }}
+      {{ end }}
+      <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" rel="noopener">
+      <i class="{{ $pack }} {{ $icon }} {{if (or $proj.name $proj.text) }}mr-1{{end}}"></i>
+        {{ $proj.text }} {{ if lt 1 (len $page.Params.publication) }} {{ add $projindex 1 }} {{ end }}
+      </a>
+    {{ else }}
+      {{/* errorf "The `publication` parameter in `content/%s` references a file, `content/publication/%s`, which cannot be found. Please either set `publication = []` or fix the reference." $page.File.Path . */}}
+    {{ end }}
+  {{ end }}
+{{ end }}
 {{ with $page.Params.software }}
   {{ range $projindex, $proj := $page.Params.software }}
     {{ $pack := or $proj.icon_pack "fa-solid" }}
     {{ with (site.GetPage (printf "software/%s" $proj.name)) }}
       {{ with .Param "external_link" }}
-        <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ . }}" target="_blank" rel="noopener">
+        <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ . }}" rel="noopener">
       {{ else }}
         <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ .RelPermalink }}">
       {{ end }}
@@ -80,7 +98,7 @@
         {{ $proj.link_text }} {{ if lt 1 (len $page.Params.software) }} {{ add $projindex 1 }} {{ end }}
       </a>
     {{ else }}
-      {{/* errorf "The `projects` parameter in `content/%s` references a project file, `content/project/%s`, which cannot be found. Please either set `projects = []` or fix the reference." $page.File.Path . */}}
+      {{/* errorf "The `software` parameter in `content/%s` references a file, `content/software/%s`, which cannot be found. Please either set `software = []` or fix the reference." $page.File.Path . */}}
     {{ end }}
   {{ end }}
 {{ end }}
@@ -89,7 +107,7 @@
   {{ range $projindex, $projpage := $page.Params.software }}
     {{ with (site.GetPage (printf "project/%s" $projpage)) }}
       {{ with .Param "external_link" }}
-        <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ . }}" target="_blank" rel="noopener">
+        <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ . }}" rel="noopener">
       {{ else }}
         <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ .RelPermalink }}">
       {{ end }}
@@ -101,7 +119,7 @@
   {{ end }}
 {{ else }}
   {{ with $page.Params.url_project }}
-    <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ . }}" target="_blank" rel="noopener">
+    <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ . }}" rel="noopener">
       {{ i18n "btn_project" }}
     </a>
   {{ end }}
@@ -114,13 +132,13 @@
   {{ else }}
     {{ $link = . | relURL }}
   {{ end }}
-<a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" rel="noopener">
   {{ i18n "btn_poster" }}
 </a>
 {{ end }}
 {{ if $page.Params.slides }}
   {{ with (site.GetPage (printf "slides/%s" $page.Params.slides)) }}
-  <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ .RelPermalink }}" target="_blank">
+  <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ .RelPermalink }}">
     {{ i18n "btn_slides" }}
   </a>
   {{ end }}
@@ -132,7 +150,7 @@
   {{ else }}
     {{ $link = . | relURL }}
   {{ end }}
-<a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" rel="noopener">
   {{ i18n "btn_slides" }}
 </a>
 {{ end }}
@@ -144,7 +162,7 @@
   {{ else }}
     {{ $link = . | relURL }}
   {{ end }}
-<a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" rel="noopener">
   {{ i18n "btn_video" }}
 </a>
 {{ end }}
@@ -155,7 +173,7 @@
   {{ else }}
     {{ $link = . | relURL }}
   {{ end }}
-<a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" rel="noopener">
   {{ i18n "btn_source" }}
 </a>
 {{ end }}
@@ -163,7 +181,8 @@
   {{ $pack := or .icon_pack "fa-solid" }}
   {{ $link := .url | default "" }}
   {{ $scheme := (urls.Parse $link).Scheme }}
-  {{ $target := "" }}
+  {{ $rel := "" }}
+  {{ $temp := false }}
   {{ if not $scheme }}
     {{ $resource := $page.Resources.GetMatch $link }}
     {{ if $resource }}
@@ -172,10 +191,10 @@
       {{ $link = $link | relURL }}
     {{ end }}
   {{ else if in (slice "http" "https") $scheme }}
-    {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+    {{ $rel = "noopener" }}
   {{ end }}
-  <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }}>
-    {{ if .icon }}<i class="{{ $pack }} {{ .icon }} {{if .name}}mr-1{{end}}"></i>{{end}}
+  <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ $link | safeURL }}" rel="{{ $rel | safeHTMLAttr }}">
+  {{ if .icon }}<i class="{{ $pack }} {{ .icon }} {{if .name}}mr-1{{end}}"></i>{{end}}{{if $temp }}yes{{ end }}
     {{- with .name }}{{ . | safeHTML }}{{ end -}}
   </a>
 {{ end }}

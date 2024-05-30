@@ -7,24 +7,28 @@ tags: ['math', 'applied topology', 'computational geometry', 'data science']
 date: '07 Sep 2023'
 
 # Optional external URL for project (replaces project detail page).
-external_link: 'https://pypi.org/project/chalc/'
+external_link: 'https://abhinavnatarajan.github.io/Chalc'
 
 # image:
 #   caption: Photo by rawpixel on Unsplash
 #   focal_point: Smart
 
+publication:
+  - name: morse_delaunay
+    text: Research paper
+
 links:
   # - icon: fa-file-lines
   #   icon_pack: fa-regular
-  #   name: Publication
-  #   url: publication/cohesionrepulsion
-  - icon: fa-book
-    icon_pack: fa-solid
-    name: Documentation
-    url: https://abhinavnatarajan.github.io/Chalc
+  #   name: Research paper
+  #   url: publication/morse_delaunay
+  # - icon: fa-book
+  #   icon_pack: fa-solid
+  #   name: Documentation
+  #   url: https://abhinavnatarajan.github.io/Chalc
   - icon: fa-github
     icon_pack: fa-brands
-    name: Code
+    name: Source code
     url: https://github.com/abhinavnatarajan/Chalc
 url_code: ''
 url_pdf: ''

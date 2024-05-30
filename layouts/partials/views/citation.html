@@ -24,10 +24,10 @@
     </span>
     ({{- $item.Date.Format "2006" -}}).
     <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>.
-    {{ if $item.Params.publication_short }}
-    <span class="article-metadata li-cite-journal">{{- trim ($item.Params.publication_short | markdownify) "." -}}</span>.
-    {{ else if $item.Params.publication }}
-    <span class="article-metadata li-cite-journal">{{- $item.Params.publication | markdownify -}}</span>.
+    {{ if $item.Params.journal_short }}
+    <span class="article-metadata li-cite-journal">{{- trim ($item.Params.journal_short | markdownify) "." -}}</span>.
+    {{ else if $item.Params.journal }}
+    <span class="article-metadata li-cite-journal">{{- $item.Params.journal | markdownify -}}</span>.
     {{ end }}
     </span>
 
@@ -37,10 +37,10 @@
       {{ partial "page_metadata_authors" $item }}.
     </span>
     <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>.
-    {{ if $item.Params.publication_short }}
-    <span class="article-metadata li-cite-journal">{{- trim ($item.Params.publication_short | markdownify) "." -}}</span>,
-    {{ else if $item.Params.publication }}
-    <span class="article-metadata li-cite-journal">{{- $item.Params.publication | markdownify -}}</span>,
+    {{ if $item.Params.journal_short }}
+    <span class="article-metadata li-cite-journal">{{- trim ($item.Params.journal_short | markdownify) "." -}}</span>,
+    {{ else if $item.Params.journal }}
+    <span class="article-metadata li-cite-journal">{{- $item.Params.journal | markdownify -}}</span>,
     {{ end }}
     {{- $item.Date.Format "2006" -}}.
 
@@ -63,10 +63,10 @@
       {{ $vol_iss_pg = (print $vol_iss_pg ", " .) }}
     {{ end }}
     {{ $vol_iss_pg = (print $vol_iss_pg ".") }}
-    {{ if $item.Params.publication_short }}
-      <span class="li-cite-journal"> {{- trim ($item.Params.publication_short | markdownify) "." -}} </span> {{- $vol_iss_pg -}}
-    {{ else if $item.Params.publication }}
-      <span class="li-cite-journal"> {{- $item.Params.publication | markdownify -}} </span> {{- $vol_iss_pg -}}
+    {{ if $item.Params.journal_short }}
+      <span class="li-cite-journal"> {{- trim ($item.Params.journal_short | markdownify) "." -}} </span> {{- $vol_iss_pg -}}
+    {{ else if $item.Params.journal }}
+      <span class="li-cite-journal"> {{- $item.Params.journal | markdownify -}} </span> {{- $vol_iss_pg -}}
     {{ end }}
     {{ with $item.Params.note }}
       {{- trim ( . | markdownify) "." -}} .

@@ -10,7 +10,6 @@ authors:
 # - "Equal contribution"
 # - "Equal contribution"
 date: "01 Dec 2021"
-# doi: "10.48550/arXiv.2112.00290"
 
 # Schedule page publish date (NOT publication's date).
 # publishDate: "2017-01-01T00:00:00Z"
@@ -22,8 +21,13 @@ date: "01 Dec 2021"
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: ArXiv
-publication_short: ArXiv
+journal: Preprint
+# journal_short:
+# volume: 61
+# number: 1
+# pages:
+# note: To appear.
+# doi: '10.1017/jpr.2023.33'
 
 abstract: Die analysis is an essential numismatic method, and an important tool of ancient economic history. Yet, manual die studies are too labor-intensive to comprehensively study large coinages such as those of the Roman Empire. We address this problem by proposing a model for unsupervised computational die analysis, which can reduce the time investment necessary for large-scale die studies by several orders of magnitude, in many cases from years to weeks. From a computer vision viewpoint, die studies present a challenging unsupervised clustering problem, because they involve an unknown and large number of highly similar semantic classes of imbalanced sizes. We address these issues through determining dissimilarities between coin faces derived from specifically devised Gaussian process-based keypoint features in a Bayesian distance clustering framework. The efficacy of our method is demonstrated through an analysis of 1135 Roman silver coins struck between 64-66 C.E.
 
@@ -68,13 +72,3 @@ image:
 #   Otherwise, set `slides: ""`.
 # slides: ""
 ---
-
-<!-- {{% callout note %}}
-Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-{{% /callout %}}
-
-{{% callout note %}}
-Create your slides in Markdown - click the *Slides* button to check out the example.
-{{% /callout %}}
-
-Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). -->

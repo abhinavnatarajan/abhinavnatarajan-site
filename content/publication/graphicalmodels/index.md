@@ -17,7 +17,6 @@ authors:
 
 date: '01 Mar 2024' # dd mmm yyyy
 # publishDate: '04 March 2024' # include this so that the page is rendered despite the date being in the future
-doi: '10.1017/jpr.2023.33'
 
 # Schedule page publish date (NOT publication's date).
 # publishDate: '2017-01-01T00:00:00Z'
@@ -29,14 +28,13 @@ doi: '10.1017/jpr.2023.33'
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-# publication: In *Wowchemy Conference*
-publication: Journal of Applied Probability
-# publication_short:
-
+journal: Journal of Applied Probability
+# journal_short:
 volume: 61
 number: 1
-
+# pages:
 # note: To appear.
+doi: '10.1017/jpr.2023.33'
 
 abstract: Gaussian graphical models are useful tools for conditional independence structure inference of multivariate random variables. Unfortunately, Bayesian inference of latent graph structures is challenging due to exponential growth of $\mathcal{G}_n$, the set of all graphs in n vertices. One approach that has been proposed to tackle this problem is to limit search to subsets of $\mathcal{G}_n$. In this paper, we study subsets that are vector subspaces with the cycle space $C_n$ as main example. We propose a novel prior on $C_n$ based on linear combinations of cycle basis elements and present its theoretical properties. Using this prior, we implemented a Markov chain Monte Carlo algorithm and show that (i) posterior edge inclusion estimates compared to the standard technique are comparable despite searching a smaller graph space and (ii) the vector space perspective enables straightforward MCMC algorithms. 
 
@@ -87,13 +85,3 @@ image:
 #   Otherwise, set `slides: ""`.
 # slides: example
 ---
-<!-- 
-{{% callout note %}}
-Click the _Cite_ button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-{{% /callout %}}
-
-{{% callout note %}}
-Create your slides in Markdown - click the _Slides_ button to check out the example.
-{{% /callout %}}
-
-Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). -->
