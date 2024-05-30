@@ -52,7 +52,7 @@ featured: true
 #   icon_pack: fa-brands
 #   url: ''
 
-arxiv_id: '2107.05414'
+arxiv_id: '2405.19303'
 url_pdf: ''
 url_code: ''
 url_dataset: ''
