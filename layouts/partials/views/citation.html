@@ -47,7 +47,7 @@
   {{ else }}
 
     {{/* default style */}}
-    <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>.
+    <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
     ({{- $item.Date.Format "2006" -}}).
     <span class="article-metadata li-cite-author">
       {{ partial "page_metadata_authors" $item }}.

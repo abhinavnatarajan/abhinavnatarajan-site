@@ -34,7 +34,7 @@ journal: Journal of the American Statistical Association
 # journal_short: J. Am. Stat. Assoc.
 volume: 119
 number: 546
-# pages: 3-4
+pages: 1374-1384
 # note: to appear
 doi: '10.1080/01621459.2023.2191821'
 
