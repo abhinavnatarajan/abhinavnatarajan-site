@@ -190,7 +190,7 @@ a:not(.btn) {
     color: $sta-night-link;
   }
 
-  &:is(:hover, :focus) {
+  &:is(:hover) {
 
     color: $sta-link-hover;
     // Abhinav - add option for hover decoration
