@@ -1,0 +1,89 @@
+/*************************************************
+ *  Button size override
+ *************************************************/
+
+.btn {
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  line-height: 0.9; // Anything less and multiline button text may overlap.
+  border-radius: 0.3rem;
+  transition: all 0s;
+}
+
+.btn-links .btn {
+  padding: 5px 0.5rem;
+  line-height: 1;
+}
+
+.btn.btn-sm {
+  padding: 5px 0.4rem;
+  font-size: 14px;
+  border-radius: 0.2rem;
+}
+
+.btn-page-header {
+  // Satisfy Lighthouse tap targets criteria.
+  margin: 8px 8px 8px 0;
+}
+
+/*************************************************
+ *  Toolbar Buttons
+ **************************************************/
+
+.btn-toolbar {
+  .btn {
+    font-size: 0.9rem;
+    padding: 10px 14px 9px;
+    border: none;
+
+    &:first-child {
+      border-radius: 6px 0 0 6px;
+    }
+
+    &:last-child {
+      border-radius: 0 6px 6px 0;
+    }
+
+    &.btn-primary {
+      &:is(:hover) {
+        box-shadow: 0 0 0 0.2rem $sta-primary-light;
+        background-color: $sta-primary;
+      }
+
+      &:is(:active, .active) {
+        background-color: $sta-primary-dark;
+      }
+    }
+  }
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem $sta-primary-light;
+}
+
+// Abhinav: added dark mode override
+.dark {
+
+  // buttons with a solid background-color
+  .btn-toolbar .btn.btn-primary {
+    background-color: $sta-night-primary-darker;
+    border-color: $sta-night-primary-darker;
+    color: #fff;
+
+    &:is(:hover, :active, .active) {
+      background-color: $sta-night-primary-dark;
+    }
+  }
+
+  .btn.btn-outline-primary {
+    border-color: $sta-night-primary;
+
+    &:hover,
+    &:active {
+      border-color: $sta-night-primary-dark;
+      background-color: $sta-night-primary-dark;
+    }
+  }
+}

@@ -40,8 +40,6 @@
 {{- $font_sizes := dict "xs" 14 "s" 16 "m" 18 "l" 21 "xl" 23 -}}
 {{- $font_size_numeric := (index $font_sizes $font_size) | default (index $font_sizes "l") -}}
 {{- $scr.Set "font_size" $font_size_numeric -}}
-{{- $scr.Set "font_size_small" (mul 0.9 $font_size_numeric) -}}
-{{- $scr.Set "font_size_small_multiplier" 0.9 -}}
 
 {{/* Load Font Set. */}}
 
@@ -62,21 +60,26 @@
 
 {{- $scr.Set "night_primary" ($theme_night.primary | default ($scr.Get "primary")) -}}
 
+{{- $scr.Set "body_color" ($theme_day.body_color | default "rgb(0,0, 0)") -}}
+{{- $scr.Set "night_body_color" ($theme_night.body_color | default "rgb(248,248, 242)") -}}
+
 {{- $scr.Set "background" ($theme_day.background | default "rgb(255, 255, 255)") -}}
 {{- $scr.Set "home_section_odd" ($theme_day.home_section_odd | default "rgb(255, 255, 255)") -}}
 {{- $scr.Set "home_section_even" ($theme_day.home_section_even | default "rgb(247, 247, 247)") -}}
 
-{{- $scr.Set "dark_background" ($theme_night.background | default "hsla(231, 15%, 16%, 1)") -}}
-{{- $scr.Set "dark_home_section_odd" ($theme_night.home_section_odd | default "hsla(231, 15%, 18%, 1)") -}}
-{{- $scr.Set "dark_home_section_even" ($theme_night.home_section_even | default "hsla(231, 15%, 16%, 1)") -}}
+{{- $scr.Set "night_background" ($theme_night.background | default "hsla(231, 15%, 16%, 1)") -}}
+{{- $scr.Set "night_home_section_odd" ($theme_night.home_section_odd | default "hsla(231, 15%, 18%, 1)") -}}
+{{- $scr.Set "night_home_section_even" ($theme_night.home_section_even | default "hsla(231, 15%, 16%, 1)") -}}
 
 {{- $scr.Set "link" ($theme_day.link | default $theme_day.primary | default ($scr.Get "primary")) -}}
 {{- $scr.Set "link_hover" ($theme_day.link_hover | default $theme_day.primary | default ($scr.Get "primary")) -}}
 {{- $scr.Set "link_decoration" ($theme_day.link_decoration | default "inherit") -}}
+{{- $scr.Set "link_hover_decoration" ($theme_day.link_hover_decoration | default "inherit") -}}
 
-{{- $scr.Set "dark_link" ($theme_night.link | default ($scr.Get "night_primary")) -}}
-{{- $scr.Set "dark_link_hover" ($theme_night.link_hover | default (printf "lighten(%s, 30%%)" ($scr.Get "night_primary"))) -}}
-{{- $scr.Set "dark_link_decoration" ($theme_night.link_decoration | default "inherit") -}}
+{{- $scr.Set "night_link" ($theme_night.link | default ($scr.Get "night_primary")) -}}
+{{- $scr.Set "night_link_hover" ($theme_night.link_hover | default ($scr.Get "night_primary")) -}}
+{{- $scr.Set "night_link_decoration" ($theme_night.link_decoration | default ($scr.Get "link_decoration")) -}}
+{{- $scr.Set "night_link_hover_decoration" ($theme_night.link_hover_decoration | default ($scr.Get "link_hover_decoration")) -}}
 
 {{- $scr.Set "menu_primary" ($theme_day.menu_primary | default "#fff") -}}
 {{- $scr.Set "menu_text" ($theme_day.menu_text | default "#34495e") -}}
@@ -85,9 +88,9 @@
 
 {{- $scr.Set "section_headings" ($theme_day.section_headings_color | default "black") -}}
 
-{{- $scr.Set "dark_menu_primary" ($theme_night.menu_primary | default "rgb(40, 42, 54)") -}}
-{{- $scr.Set "dark_menu_text" ($theme_night.menu_text | default "white") -}}
-{{- $scr.Set "dark_menu_text_active" ($theme_night.menu_text_active | default ($scr.Get "night_primary")) -}}
-{{- $scr.Set "dark_menu_title" ($theme_night.menu_title | default "white") -}}
+{{- $scr.Set "night_menu_primary" ($theme_night.menu_primary | default ($scr.Get "night_background")) -}}
+{{- $scr.Set "night_menu_text" ($theme_night.menu_text | default ($scr.Get "night_body_color")) -}}
+{{- $scr.Set "night_menu_text_active" ($theme_night.menu_text_active | default $theme_night.primary | default ($scr.Get "night_primary")) -}}
+{{- $scr.Set "night_menu_title" ($theme_night.menu_title | default ($scr.Get "night_body_color")) -}}
 
-{{- $scr.Set "dark_section_headings" ($theme_night.section_headings_color | default "white") -}}
+{{- $scr.Set "night_section_headings" ($theme_night.section_headings_color | default "white") -}}

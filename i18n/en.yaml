@@ -102,6 +102,9 @@
 # About widget
 
 - id: interests
+  translation: Interests
+
+- id: academic_interests
   translation: Academic interests
 
 - id: education

@@ -42,8 +42,9 @@
           {{- if $person.name_pronunciation -}}
           <div style="ruby-position: under; ruby-align: center">
             <ruby>
-              {{ $person.first_name }}<rt><a href="https://en.wiktionary.org/wiki/Wiktionary:IPA_pronunciation_key" rel=”noopener” target="_blank">[{{ $person.name_pronunciation.first }}]</a></rt>
-              &nbsp;{{ $person.last_name }}<rt><a href="https://en.wiktionary.org/wiki/Wiktionary:IPA_pronunciation_key" rel=”noopener” target="_blank">[{{ $person.name_pronunciation.last }}]</a></rt>
+              {{ $person.first_name }}
+              <rt>{{ $person.name_pronunciation.first }}</rt>
+              &nbsp;{{ $person.last_name }}<rt>{{ $person.name_pronunciation.last }}</rt>
             </ruby>
           </div>
           {{- else -}}
@@ -51,6 +52,7 @@
           {{- end -}}
         </h2>
 
+        {{ with $person.pronouns }}<h3>Pronouns: {{ . | markdownify | emojify }}</h3>{{ end }}
         {{ with $person.role }}<h3>{{ . | markdownify | emojify }}</h3>{{ end }}
 
         {{ range $person.organizations }}
@@ -102,7 +104,7 @@
 
       {{ with $person.interests }}
       <div class="col-md-5">
-        <div class="section-subheading">{{ i18n "interests" | markdownify }}</div>
+        <div class="section-subheading">{{ i18n "academic_interests" | markdownify }}</div>
         <ul class="ul-interests mb-0">
           {{ range . }}
           <li>{{ . | markdownify | emojify }}</li>

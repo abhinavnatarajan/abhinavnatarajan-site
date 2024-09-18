@@ -5,10 +5,13 @@
 
 $sta-darken-percentage: 10%;
 $sta-lighten-percentage: 10%;
+$sta-night-darken-percentage: 20%;
+$sta-night-lighten-percentage: 5%;
 
 $sta-font-size: {{ $scr.Get "font_size" }};
-$sta-font-size-small: {{ $scr.Get "font_size_small" }};
-$sta-font-size-small-multiplier: {{ $scr.Get "font_size_small_multiplier" }};
+$sta-font-size-small: 0.9rem;
+$sta-font-size-smaller: 0.8rem;
+$sta-font-size-large: 1.1rem;
 
 $sta-font-body: "{{ $scr.Get "body_font" }}";
 $sta-font-heading: "{{ $scr.Get "heading_font" }}";
@@ -20,16 +23,22 @@ $sta-primary-light: lighten($sta-primary, $sta-lighten-percentage);
 $sta-primary-dark: darken($sta-primary, $sta-darken-percentage);
 
 $sta-night-primary: {{ $scr.Get "night_primary" }};
-$sta-night-primary-light: lighten($sta-night-primary, $sta-lighten-percentage);
-$sta-night-primary-dark: darken($sta-night-primary, $sta-darken-percentage);
+$sta-night-primary-light: lighten($sta-night-primary, $sta-night-lighten-percentage);
+$sta-night-primary-dark: darken($sta-night-primary, $sta-night-darken-percentage);
+$sta-night-primary-darker: darken($sta-night-primary-dark, $sta-night-darken-percentage);
+
+$sta-night-body-color: {{ $scr.Get "night_body_color" }};
+$sta-night-body-color-darker: darken($sta-night-body-color, 40);
 
 $sta-link: {{ $scr.Get "link" }};
 $sta-link-hover: {{ $scr.Get "link_hover" }};
 $sta-link-decoration: {{ $scr.Get "link_decoration" }};
+$sta-link-hover-decoration: {{ $scr.Get "link_hover_decoration" }};
 
-$sta-dark-link: {{ $scr.Get "dark_link" }};
-$sta-dark-link-hover: {{ $scr.Get "dark_link_hover" }};
-$sta-dark-link-decoration: {{ $scr.Get "dark_link_decoration" }};
+$sta-night-link: {{ $scr.Get "night_link" }};
+$sta-night-link-hover: {{ $scr.Get "night_link_hover" }};
+$sta-night-link-decoration: {{ $scr.Get "night_link_decoration" }};
+$sta-night-link-hover-decoration: {{ $scr.Get "night_link_hover_decoration" }};
 
 $sta-menu-primary: {{ $scr.Get "menu_primary" }};
 $sta-menu-text: {{ $scr.Get "menu_text" }};
@@ -38,21 +47,20 @@ $sta-menu-title: {{ $scr.Get "menu_title" }};
 
 $sta-section-headings: {{ $scr.Get "section_headings" }};
 
-$sta-dark-menu-primary: {{ $scr.Get "dark_menu_primary" }};
-$sta-dark-menu-text: {{ $scr.Get "dark_menu_text" }};
-$sta-dark-menu-text-active: {{ $scr.Get "dark_menu_text_active" }};
-$sta-dark-menu-title: {{ $scr.Get "dark_menu_title" }};
+$sta-night-menu-primary: {{ $scr.Get "night_menu_primary" }};
+$sta-night-menu-text: {{ $scr.Get "night_menu_text" }};
+$sta-night-menu-text-active: {{ $scr.Get "night_menu_text_active" }};
+$sta-night-menu-title: {{ $scr.Get "night_menu_title" }};
 
-$sta-dark-section-headings: {{ $scr.Get "dark_section_headings" }};
+$sta-night-section-headings: {{ $scr.Get "night_section_headings" }};
 
 $sta-background: {{ $scr.Get "background" }};
-$sta-dark-background: {{ $scr.Get "dark_background" }};
+$sta-night-background: {{ $scr.Get "night_background" }};
 
 $sta-home-section-odd: {{ $scr.Get "home_section_odd" }};
 $sta-home-section-even: {{ $scr.Get "home_section_even" }};
-
-$sta-dark-home-section-odd: {{ $scr.Get "dark_home_section_odd" }};
-$sta-dark-home-section-even: {{ $scr.Get "dark_home_section_even" }};
+$sta-night-home-section-odd: {{ $scr.Get "night_home_section_odd" }};
+$sta-night-home-section-even: {{ $scr.Get "night_home_section_even" }};
 
 @import "bootstrap_variables";
 @import "_vendor/bootstrap/bootstrap";

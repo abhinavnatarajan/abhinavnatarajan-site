@@ -1,170 +1,76 @@
 .dark {
-	.btn.btn-primary {
-		background-color: $sta-night-primary;
-		border-color: $sta-night-primary;
-		color: rgb(248, 248, 242) !important;
-	}
+  // .navbar .navbar-nav .nav-link:hover,
+  // .nav-item .dropdown-item:not(.active):hover {
+  //   color: $sta-night-link-hover !important;
+  //   transition: color 0.15s ease;
+  // }
 
-	.btn.btn-primary:hover {
-		background-color: $sta-night-primary-dark;
-		border-color: $sta-night-primary-dark;
-	}
+  // Do not change the color of article summary links on hover
 
-	.btn.btn-outline-primary {
-		border-color: $sta-night-primary;
-	}
-
-	.btn.btn-outline-primary:hover {
-		border-color: $sta-night-primary;
-		background-color: $sta-night-primary;
-	}
-
-	.btn-toolbar .btn.btn-primary:hover,
-	.btn-toolbar .btn.btn-primary:focus {
-		background-color: $sta-night-primary-light !important;
-	}
-
-	.btn-toolbar .btn.btn-primary:active,
-	.btn-toolbar .btn.btn-primary.active {
-		background-color: $sta-night-primary-dark !important;
-	}
-
-	.btn-primary:not(:disabled):not(.disabled).active:focus,
-	.btn-primary:not(:disabled):not(.disabled):active:focus,
-	.show > .btn-primary.dropdown-toggle:focus {
-		box-shadow: 0 0 0 0.1rem $sta-night-primary-light;
-	}
-
-	.navbar .navbar-nav .nav-link:hover,
-	.nav-item .dropdown-item:not(.active):hover,
-	.nav-item .dropdown-item:not(.active):hover {
-		color: $sta-dark-link-hover !important;
-		transition: color 0.15s ease;
-	}
-
-	// Change the color of article title links on hover
-	.article-title a:hover {
-		color: $sta-dark-link-hover !important;
-		text-decoration: none !important;
-		transition: color 0.15s ease;
-	}
-
-	// Do not change the color of article summary links on hover
-	a.summary-link:hover {
-		color: unset;
-	}
-
-	// Color for section headings
-	.section-heading h1, #about .section-subheading,
-	.portrait-title h3,
-	// .portrait-title ruby rt,
-	.article-metadata,
-	.media .article-metadata,
-	ul.ul-edu li .description p.institution {
-		color: $sta-dark-section-headings;
-	}
+  // Color for section headings
+  .section-heading h1,
+  .article-metadata,
+  .media .article-metadata {
+    color: $sta-night-section-headings;
+  }
 }
 
 // Everything below this is light mode
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .btn-primary:not(:disabled):not(.disabled):active:focus,
-.show > .btn-primary.dropdown-toggle:focus {
-	box-shadow: 0 0 0 0.1rem $sta-primary-light;
-}
-
-// Change color of links in the navbar on hover
-.navbar .navbar-nav .nav-link:hover,
-.nav-item .dropdown-item:not(.active):hover {
-	color: $sta-link-hover !important;
-	transition: color 0.15s ease;
-}
-
-// Change the color of article title links on hover
-.article-title a:hover {
-  color: $sta-link-hover !important;
-  text-decoration: none !important;
-  transition: color 0.15s ease;
+.show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.1rem $sta-primary-light;
 }
 
 .section-heading h1,
 .portrait-title h3,
-.media .article-metadata,
-ul.ul-edu li .description p.institution {
-	color: $sta-section-headings;
+.media .article-metadata {
+  color: $sta-section-headings;
 }
 
 // Font overrides
 html {
-	font-kerning: normal;
-	line-height: 1.5;
+  font-kerning: normal;
+  line-height: 1.5;
 }
 
 .article-container {
-	.article-style p,
-	.pub-abstract {
-	text-align: justify;
-	}
+
+  .article-style p,
+  .pub-abstract {
+    text-align: justify;
+  }
 }
 
 .navbar-brand {
-	font-weight: 500;
+  font-weight: 500;
 }
 
-.navbar .navbar-nav .nav-link.active,
-.dark .navbar .navbar-nav .nav-link.active {
-	font-weight: 500 !important;
-}
+// .navbar .navbar-nav .nav-link.active,
+// .dark .navbar .navbar-nav .nav-link.active {
+//   font-weight: 500 !important;
+// }
 
 .navbar,
 .dark .navbar {
-	.dropdown-item.active,
-	.dropdown-item-active {
-		font-weight: 500 !important;
-	}
-}
 
-ul.ul-interests li {
-	font-size: unset;
-}
-
-ul.ul-edu li .description p.course {
-	font-size: unset;
-}
-
-ul.ul-edu li .description p.institution {
-	font-size: #{$sta-font-size-small-multiplier}rem;
-	color: rgba(0, 0, 0, 0.6);
-}
-
-.portrait-title {
-	h2 { // name in about widget
-	font-size: 1.75rem;
-	font-weight: 400;
-	color: #000;
-	margin: 20px 0 10px;
-	}
-	h3 {
-		font-size: 1rem;
-		font-weight: 400;
-		color: rgba(0, 0, 0, 0.54);
-		margin: 0 0 10px;
-	}
-	// ruby rt {
-	// 	color: rgba(0, 0, 0, 0.54);
-	// }
+  .dropdown-item.active,
+  .dropdown-item-active {
+    font-weight: 500 !important;
+  }
 }
 
 .section-subheading {
-font-size: 1.25rem;
-font-family: $sta-font-heading, sans-serif;
-font-weight: 500;
-margin-top: 1rem;
-margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-family: $sta-font-heading, sans-serif;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 // Publication authors
 .article-metadata {
-	letter-spacing: unset;
+  letter-spacing: unset;
 }
 
 .dark .li-cite-author {
@@ -173,106 +79,77 @@ margin-bottom: 0.5rem;
 
 // Journal name
 .li-cite-journal {
-	font-style: italic;
-	color: inherit;
-	font-size: 1rem;
+  font-style: italic;
+  color: inherit;
+  font-size: 1rem;
 }
 
-// Cards in listing
-.card-simple .article-title,
-.media.stream-item .article-title {
-  font-size: 1.25rem;
-}
-
-.card-simple .article-style {
-  margin-top: 2px;
-  font-size: #{$sta-font-size-small-multiplier}rem;
-}
-
-.dark .card-simple {
-  background: #{$sta-dark-home-section-even};
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
-  border: 1px solid rgb(68, 71, 90);
-}
-.article-date {
-	font-size: 0.8rem; // smaller than font-size-small
+.dark .article-date {
+  font-size: 0.8rem; // smaller than font-size-small
 }
 
 // Post subtitle in widget
 .media.stream-item .article-style {
-	font-size: unset;
+  font-size: unset;
 }
 
 // Author card at the bottom of posts
 .author-card .card-title {
-	margin-top: 0;
-	margin-bottom: 15px;
-	font-weight: 500;
-	color: rgba(0, 0, 0, 0.84);
-  }
-
-.author-card .card-subtitle {
-	font-weight: 400;
-	font-size: #{$sta-font-size-small-multiplier}rem;
-	color: rgba(0, 0, 0, 0.54);
-	margin-bottom: 7px;
-  }
-
-.author-card .card-text {
-	color: rgba(0, 0, 0, 0.76);
-	font-size: #{$sta-font-size-small-multiplier}rem;
-	margin-bottom: 4px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.84);
 }
 
 // Google Material Icons
 .material-symbols-sharp {
-	font-variation-settings:
-	'FILL' 1,
-	'wght' 400,
-	'GRAD' 0,
-	'opsz' 48
-  }
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
 
 .material-symbols-rounded {
-font-variation-settings:
-'FILL' 1,
-'wght' 400,
-'GRAD' 0,
-'opsz' 48;
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
 }
 
 // Icomoon icons
 @font-face {
-	font-family: 'icomoon';
-	src:  url('/webfonts/icomoon.eot?8jh2oc');
-	src:  url('/webfonts/icomoon.eot?8jh2oc#iefix') format('embedded-opentype'),
-	  url('/webfonts/icomoon.ttf?8jh2oc') format('truetype'),
-	  url('/webfonts/icomoon.woff?8jh2oc') format('woff'),
-	  url('/webfonts/icomoon.svg?8jh2oc#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-	font-display: block;
-  }
+  font-family: 'icomoon';
+  src: url('/webfonts/icomoon.eot?8jh2oc');
+  src: url('/webfonts/icomoon.eot?8jh2oc#iefix') format('embedded-opentype'),
+    url('/webfonts/icomoon.ttf?8jh2oc') format('truetype'),
+    url('/webfonts/icomoon.woff?8jh2oc') format('woff'),
+    url('/webfonts/icomoon.svg?8jh2oc#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 
 .icomoon {
-/* use !important to prevent issues with browser extensions that change fonts */
-font-family: 'icomoon' !important;
-speak: never;
-font-style: normal;
-font-weight: normal;
-font-variant: normal;
-text-transform: none;
-line-height: 1;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-/* Better Font Rendering =========== */
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-julia:before {
-content: "\e900";
+  content: "\e900";
 }
 
 .icon-file-pdf:before {
-	content: "\eadf";
+  content: "\eadf";
 }

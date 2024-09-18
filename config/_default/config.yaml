@@ -24,11 +24,11 @@ module:
     # - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-netlify-cms
     #   disable: true
     - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-netlify
-    - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-reveal
-    - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy/v5
+    # - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-reveal
+    # - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy/v5
     # - path: wowchemy-plugin-netlify # uncomment if deploying on Netlify
-    # - path: wowchemy-plugin-reveal
-    # - path: wowchemy
+    - path: wowchemy-plugin-reveal
+    - path: wowchemy
 
 ############################
 ## ADVANCED
@@ -79,12 +79,12 @@ sitemap:
 minify:
   _merge: deep
 frontmatter:
-  date: 
-   - date 
-   - publishDate 
-   - lastmod 
+  date:
+   - date
+   - publishDate
+   - lastmod
   lastmod:
    - lastmod
-   - :git 
-   - date 
+   - :git
+   - date
    - publishDate
