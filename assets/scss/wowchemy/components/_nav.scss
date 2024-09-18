@@ -73,8 +73,7 @@
       }
 
       &.active,
-      &:hover,
-      &:focus {
+      &:hover {
         color: $sta-menu-text-active;
         text-decoration: none;
 
@@ -194,8 +193,7 @@
   }
 
   &:hover,
-  &:active,
-  &:focus {
+  &:active {
     color: $sta-menu-text-active;
     text-decoration: none;
 

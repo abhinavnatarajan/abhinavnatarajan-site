@@ -44,7 +44,7 @@ header:
 
 footer:
   copyright:
-    notice: 'Copyright Abhinav Natarajan (2022-2023). This work is licensed under {license}'
+    notice: 'Copyright Abhinav Natarajan (2022-{year}). This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false
@@ -113,7 +113,7 @@ extensions:
     enable: true
   materialicons:
     enable: true
-  fontawesomeicons: 
+  fontawesomeicons:
     enable: true
 
 # Security

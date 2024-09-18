@@ -43,11 +43,15 @@ footer .powered-by {
   height: auto;
   width: auto;
   text-decoration: none;
+  a:hover {
+    text-decoration: none;
+  }
 }
 
 .footer-license-icons i {
   display: inline-flex;
   margin-right: 8px;
+  margin-bottom: 200px;
   height: 22px;
   vertical-align: text-bottom;
 }
