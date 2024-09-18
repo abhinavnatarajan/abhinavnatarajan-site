@@ -183,28 +183,24 @@ h6 {
   font-size: 1rem;
 }
 
-a,
-h3.article-title a:hover {
+a:not(.btn) {
   color: $sta-link;
-  text-decoration: none;
-  transition: color 0.6s ease;
 
   .dark & {
     color: $sta-night-link;
   }
-}
 
+  &:is(:hover, :focus) {
 
-a:not(.btn):hover,
-a:not(.btn):focus {
-  color: $sta-link-hover;
-  // Abhinav - add option for hover decoration
-  text-decoration: $sta-link-hover-decoration;
-
-  .dark & {
-    color: $sta-night-link-hover;
+    color: $sta-link-hover;
     // Abhinav - add option for hover decoration
-    text-decoration: $sta-night-link-hover-decoration;
+    text-decoration: $sta-link-hover-decoration;
+
+    .dark & {
+      color: $sta-night-link-hover;
+      // Abhinav - add option for hover decoration
+      text-decoration: $sta-night-link-hover-decoration;
+    }
   }
 }
 

@@ -1,25 +1,10 @@
 .dark {
-  // .navbar .navbar-nav .nav-link:hover,
-  // .nav-item .dropdown-item:not(.active):hover {
-  //   color: $sta-night-link-hover !important;
-  //   transition: color 0.15s ease;
-  // }
-
-  // Do not change the color of article summary links on hover
-
   // Color for section headings
   .section-heading h1,
   .article-metadata,
   .media .article-metadata {
     color: $sta-night-section-headings;
   }
-}
-
-// Everything below this is light mode
-.btn-primary:not(:disabled):not(.disabled).active:focus,
-.btn-primary:not(:disabled):not(.disabled):active:focus,
-.show>.btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.1rem $sta-primary-light;
 }
 
 .section-heading h1,

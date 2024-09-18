@@ -67,7 +67,6 @@
 
     .nav-link {
       color: rgba($sta-menu-text, 0.85);
-      transition: color 0s;
 
       .dark & {
         color: rgba($sta-night-menu-text, 0.85);
@@ -189,7 +188,6 @@
   padding-bottom: 5px;
   position: relative;
   z-index: 1030; // For z-index clickable mobile logo.
-  transition: color 0s;
 
   .dark & {
     color: $sta-night-menu-title;

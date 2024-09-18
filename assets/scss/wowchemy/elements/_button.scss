@@ -7,7 +7,7 @@
   font-size: 0.8rem;
   line-height: 0.9; // Anything less and multiline button text may overlap.
   border-radius: 0.3rem;
-  transition: all 0s;
+  transition: all 0.1s;
 }
 
 .btn-links .btn {
@@ -45,45 +45,58 @@
     }
 
     &.btn-primary {
+      .dark & {
+        background-color: $sta-night-primary-darker;
+        border-color: $sta-night-primary-darker;
+        color: #fff;
+      }
+
       &:is(:hover) {
-        box-shadow: 0 0 0 0.2rem $sta-primary-light;
+        box-shadow: 0 0 0 0.1rem $sta-primary-light;
         background-color: $sta-primary;
+
+        .dark & {
+          box-shadow: 0 0 0 0.1rem $sta-night-primary-light;
+          background-color: $sta-night-primary-dark;
+        }
       }
 
       &:is(:active, .active) {
         background-color: $sta-primary-dark;
+
+        .dark & {
+          background-color: $sta-night-primary-dark;
+        }
+      }
+
+      &:not(:disabled):not(.disabled):is(.active, :active):focus {
+        box-shadow: 0 0 0 0.1rem $sta-primary-light;
+
+        .dark & {
+          box-shadow: 0 0 0 0.1rem $sta-night-primary-light
+        }
       }
     }
   }
 }
 
-.btn-primary:not(:disabled):not(.disabled).active:focus,
-.btn-primary:not(:disabled):not(.disabled):active:focus,
 .show>.btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem $sta-primary-light;
+  box-shadow: 0 0 0 0.1rem $sta-primary-light;
+
+  .dark & {
+    box-shadow: 0 0 0 0.1rem $sta-night-primary-light
+  }
 }
 
 // Abhinav: added dark mode override
-.dark {
+.dark a.btn.btn-outline-primary {
+  color: $sta-night-primary;
+  border-color: $sta-night-primary;
 
-  // buttons with a solid background-color
-  .btn-toolbar .btn.btn-primary {
-    background-color: $sta-night-primary-darker;
-    border-color: $sta-night-primary-darker;
+  &:hover,
+  &:active {
     color: #fff;
-
-    &:is(:hover, :active, .active) {
-      background-color: $sta-night-primary-dark;
-    }
-  }
-
-  .btn.btn-outline-primary {
-    border-color: $sta-night-primary;
-
-    &:hover,
-    &:active {
-      border-color: $sta-night-primary-dark;
-      background-color: $sta-night-primary-dark;
-    }
+    border-color: $sta-night-primary-dark;
+    background-color: $sta-night-primary-dark;
   }
 }
