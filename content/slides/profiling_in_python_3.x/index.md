@@ -6,7 +6,7 @@ summary: "What, why, when, and how"
 authors: [abhinav]
 tags: []
 categories: ["coding"]
-date: 02 February 2023
+date: 02 Feb 2023
 _build:
   list: false
   

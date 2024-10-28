@@ -28,7 +28,6 @@ module:
     extended: true
   imports:
     - path: wowchemy-core
-    # - path: wowchemy-seo
   mounts:
     - source: content
       target: content

@@ -6,7 +6,7 @@ summary: "Theory and Applications"
 authors: [abhinav]
 tags: []
 categories: ["math", "applied topology", "computational geometry", "data science"]
-date: 08 September 2023
+date: 08 Sep 2023
 
 slides:
   # Choose a theme from https://github.com/hakimel/reveal.js#theming
