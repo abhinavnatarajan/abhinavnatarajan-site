@@ -34,8 +34,8 @@ bio: My research interests are in applied algebraic topology and geometry, stati
 # Interests to show in About widget
 interests:
   - Computational topology and discrete Morse theory
-  - Multiparameter persistence
-  - Cellular sheaves
+  - Cellular sheaves and multiparameter persistence
+  - Stochastic topology
   - Bayesian statistics
 
 # Education to show in About widget
