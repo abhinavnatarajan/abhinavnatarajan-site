@@ -110,7 +110,7 @@ email: ''
 highlight_name: true
 ---
 
-I’m a doctoral student in mathematics at the University of Oxford under the supervision of [Heather Harrington](https://www.maths.ox.ac.uk/people/heather.harrington) and [Ulrike Tillmann](https://people.maths.ox.ac.uk/tillmann/). My research interests are in applied topology, geometry, and algebra. I was previously a research assistant working on Bayesian high-dimensional clustering under the supervision of [Maria De Iorio](https://discovery.nus.edu.sg/13583-maria-de-iorio) at the [National University of Singapore](https://nus.edu.sg). 
+I’m a doctoral student in mathematics at the University of Oxford under the supervision of [Heather Harrington](https://www.maths.ox.ac.uk/people/heather.harrington) and [Ulrike Tillmann](https://people.maths.ox.ac.uk/tillmann/). My research interests are at the intersection of topology, geometry, data science, and statistics. I was previously a research assistant working on Bayesian high-dimensional clustering under the supervision of [Maria De Iorio](https://discovery.nus.edu.sg/13583-maria-de-iorio) at the [National University of Singapore](https://nus.edu.sg).
 
 {{< icon name="download" pack="fas" >}} Here is my [CV](https://www.dropbox.com/scl/fi/6l5fa3dl0mvfixgky3mrf/CV_Abhinav_Natarajan.pdf?rlkey=vgsdu1aa4pkt2ljc90ymy8pso&dl=0).
 
