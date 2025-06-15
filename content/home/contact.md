@@ -26,7 +26,7 @@ content:
   #     captcha: false
 
   # Contact details (edit or remove options as required)
-  email: natarajan@maths.ox.ac.uk
+  email: abhinav.natarajan@maths.ox.ac.uk
   
   # phone: 888 888 88 88
   address: 
