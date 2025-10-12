@@ -1,7 +1,7 @@
 # Address formats.
 en-ca = {order = ['street', 'city', 'region', 'postcode', 'country'], delimiters = ['<br>', ', ', '<br>', '<br>']}
 en-us = {order = ['street', 'city', 'region', 'postcode'], delimiters = [', ', ', ', ' ', '']}
-en-gb = {order = ['street', 'city', 'region', 'postcode'], delimiters = [', ', ', ', ', ', '']}
+en-gb = {order = ['street', 'city', 'region', 'country', 'postcode'], delimiters = [', ', ', ', ', ', ', ']}
 de = {order = ['street', 'postcode', 'city'], delimiters = ['<br>', ' ', '']}
 fr-ca = {order = ['street', 'city', 'region', 'postcode', 'country'], delimiters = ['<br>', ', ', '<br>', '<br>']}
 fr-fr = {order = ['street', 'postcode', 'city'], delimiters = ['<br>', ' ', '']}

@@ -1,5 +1,5 @@
 ---
-title: 'Morse Theory for Chromatic Delaunay Triangulations'
+title: 'Morse theory for chromatic Delaunay triangulations'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -15,7 +15,7 @@ authors:
 #   - 'Equal contribution'
 #   - 'Equal contribution'
 
-date: '30 May 2024' # dd mmm yyyy
+date: '03 Oct 2025' # dd mmm yyyy
 
 tags: ['topological data analysis', 'computational geometry', 'discrete Morse theory', 'computational topology']
 

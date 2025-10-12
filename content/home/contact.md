@@ -27,12 +27,12 @@ content:
 
   # Contact details (edit or remove options as required)
   email: abhinav.natarajan@maths.ox.ac.uk
-  
+ 
   # phone: 888 888 88 88
   address: 
     street: S3.28, Mathematical Institute, Radcliffe Observatory, Andrew Wiles Building, Woodstock Road 
-    city: Oxford 
-    region: 
+    city: Oxford
+    region: Oxfordshire
     postcode: OX2 6GG
     country: United Kingdom
     country_code: UK
