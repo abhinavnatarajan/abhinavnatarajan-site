@@ -17,7 +17,7 @@ content:
   archive:
     enable: false
     text: See all
-    link: ./publication/
+    link: ./research/
   # Filter on criteria
   filters:
     folders:

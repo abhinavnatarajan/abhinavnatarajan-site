@@ -10,8 +10,9 @@ date: '07 Sep 2023'
 external_link: 'https://abhinavnatarajan.github.io/Chalc'
 
 # image:
-#   caption: Photo by rawpixel on Unsplash
-#   focal_point: Smart
+  # caption: Photo by rawpixel on Unsplash
+  # focal_point: Smart
+  # show_on_card: false
 
 publication:
   - name: morse_delaunay

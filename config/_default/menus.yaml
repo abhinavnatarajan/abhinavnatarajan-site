@@ -16,7 +16,7 @@ main:
   - name: Research
     identifier: research
     weight: 20
-    url: '#publications'
+    url: '#research'
   # - name: See all
   #   url: 'publication'
   #   weight: 10

@@ -1,6 +1,6 @@
 ---
 title: "Unsupervised Statistical Learning for Die Analysis in Ancient Numismatics"
-tags: ['image processing', 'computer vision', 'clustering']
+tags: ['computer vision', 'digital numismatics', 'computational die analysis', 'Bayesian clustering', 'microclustering', 'Roman coins', 'ancient coins', 'unsupervised clustering']
 authors:
 - Andreas Heinecke
 - Emanuel Mayer
@@ -34,7 +34,6 @@ abstract: Die analysis is an essential numismatic method, and an important tool 
 # Summary. An optional shortened abstract.
 summary: Unsupervised computational die analysis for ancient numismatic studies.
 
-tags: ['computer vision', 'digital numismatics', 'computational die analysis', 'Bayesian clustering', 'microclustering', 'Roman coins', 'ancient coins', 'unsupervised clustering']
 featured: true
 
 # links:

@@ -7,7 +7,7 @@ authors: [abhinav]
 tags: []
 categories: ["coding"]
 date: 02 Feb 2023
-_build:
+build:
   list: false
   
 slides:

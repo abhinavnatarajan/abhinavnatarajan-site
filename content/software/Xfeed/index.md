@@ -10,10 +10,10 @@ date: '10 Nov 2022'
 # Optional external URL for project (replaces project detail page).
 # external_link: 'https://abhinavnatarajan.github.io/RedClust.jl'
 
-# image:
-# show_on_card: true
-#   caption: Photo by rawpixel on Unsplash
-#   focal_point: Smart
+image:
+  show_on_card: false
+  # caption: Photo by rawpixel on Unsplash
+  # focal_point: Smart
 
 links:
   - icon: fa-download
@@ -42,4 +42,4 @@ url_video: ''
 # slides: ""
 ---
 
-Xfeed is my attempt at a natural sounding crossfeed plugin, written in C++. After I have recovered from the ordeal of memory management and concurrency in C++, I will return to this page to document the mathematical details of the algorithm used in Xfeed. You can download the Xfeed as a VST3 plugin or as a standalone program from the Github repo (download links above). 
+Xfeed is my attempt at a natural sounding crossfeed plugin, written in C++. You can download Xfeed as a VST3 plugin or as a standalone program from the Github repo (download links above).

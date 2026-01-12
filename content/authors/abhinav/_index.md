@@ -114,4 +114,4 @@ I’m a doctoral student in mathematics at the University of Oxford under the su
 
 {{< icon name="download" pack="fas" >}} Here is my [CV](https://www.dropbox.com/scl/fi/6l5fa3dl0mvfixgky3mrf/CV_Abhinav_Natarajan.pdf?rlkey=vgsdu1aa4pkt2ljc90ymy8pso&dl=0).
 
-When I'm not doing math, I spend time doing things related to music or fitness (XOR, at least thus far).
+I'm also a [Carnatic vocalist](https://en.wikipedia.org/wiki/Carnatic_music), often accompanying the [Bharatanatyam dance performances](https://en.wikipedia.org/wiki/Bharatanatyam) of my partner [Shreya Kallingal](https://www.shreyakallingal.com/dance).
