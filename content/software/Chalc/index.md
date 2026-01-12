@@ -1,6 +1,6 @@
 ---
 title: Chalc
-summary: A Python package for exploring spatial relationships among low-dimensional point clouds using persistent homology and chromatic Delaunay complexes.
+summary: A Python package for exploring spatial relationships among low-dimensional point clouds using persistent homology and chromatic Delaunay filtrations.
 tags: ['math', 'applied topology', 'computational geometry', 'data science']
 
 # lastmod: '14 Mar 2023'
@@ -31,10 +31,10 @@ links:
     icon_pack: fa-brands
     name: Source code
     url: https://github.com/abhinavnatarajan/Chalc
-url_code: ''
-url_pdf: ''
-url_slides: ''
-url_video: ''
+# url_code: ''
+# url_pdf: ''
+# url_slides: ''
+# url_video: ''
 
 # Slides (optional).
 #   Associate this project with Markdown slides.

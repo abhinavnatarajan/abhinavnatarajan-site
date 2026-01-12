@@ -15,6 +15,7 @@ body.dark,
 .dark input {
   color: $sta-night-body-color;
   background: $sta-night-background;
+  text-shadow: unset;
 }
 
 .dark .form-control {
