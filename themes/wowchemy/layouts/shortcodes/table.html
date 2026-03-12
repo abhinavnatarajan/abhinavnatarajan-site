@@ -26,7 +26,9 @@
 {{ if not $is_remote }}
   {{ $src = path.Join  "content" $.Page.File.Dir $src }}
 {{ end }}
-{{ $rows := getCSV $delimiter $src }}
+{{ $file := resources.Get $src }}
+{{ $opts := dict "delimiter" $delimiter "format" "csv" }}
+{{ $rows := transform.Unmarshal $opts $file }}
 
 <table class="table">
   {{ if $useHeaderRow }}
